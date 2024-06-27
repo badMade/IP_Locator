@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
 import pandas as pd
 from tkintertable import TableCanvas, TableModel
-from utils import create_tooltip
+from src.utils import create_tooltip
 from ip_services import fetch_ipinfo_details, fetch_ipapi_details, fetch_geoip2_details
 import logging
 
