@@ -1,0 +1,19 @@
+
+### Notes
+- Make sure to adjust the paths and `IPINFO_ACCESS_TOKEN` with your actual values.
+- The log file will be created in the `logs/` directory, and the GeoLite2 database file should be placed in the `data/` directory.
+IPLocationFinder/
+├── data/
+│   └── GeoLite2-City.mmdb
+├── logs/
+│   └── ip_location_finder.log
+├── src/
+│   ├── __init__.py
+│   ├── ip_location_finder.py
+│   ├── utils.py
+│   └── ip_services.py
+├── tests/
+│   ├── __init__.py
+│   └── test_ip_location_finder.py
+├── requirements.txt
+└── README.md

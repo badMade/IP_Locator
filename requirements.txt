@@ -1,0 +1,5 @@
+ipinfo
+requests
+geoip2
+pandas
+tkintertable
