@@ -1,39 +1,76 @@
+import os
 import unittest
-from src.ip_services import fetch_ipinfo_details, fetch_ipapi_details, fetch_geoip2_details
+from unittest.mock import patch, mock_open, MagicMock
+import requests
+import subprocess
+from ip_location_finder import (
+    download_file, save_to_file, extract_gzip, fetch_country_asn_details, COUNTRY_ASN_DB_PATH,
+    EXTRACTED_CSV_PATH, EXTRACTED_JSON_PATH
+)
 
 class TestIPLocationFinder(unittest.TestCase):
-    def setUp(self):
-        self.cache = {}
-        self.progress = None
-        self.status_label = None
-        self.root = None
 
-    def test_fetch_ipinfo_details(self):
-        ip_addresses = "8.8.8.8"
-        df = fetch_ipinfo_details(ip_addresses, self.cache, self.progress, self.status_label, self.root)
-        self.assertFalse(df.empty)
-        self.assertIn("IP Address", df.columns)
-        self.assertIn("City", df.columns)
-        self.assertIn("Region", df.columns)
-        self.assertIn("Country", df.columns)
+    @patch('ip_location_finder.requests.get')
+    def test_download_file(self, mock_get):
+        url = "https://example.com/file"
+        output_path = "test_output/test_file"
+        mock_get.return_value = MagicMock(status_code=200, content=b'file content')
 
-    def test_fetch_ipapi_details(self):
-        ip_addresses = "8.8.8.8"
-        df = fetch_ipapi_details(ip_addresses, self.cache, self.progress, self.status_label, self.root)
-        self.assertFalse(df.empty)
-        self.assertIn("IP Address", df.columns)
-        self.assertIn("City", df.columns)
-        self.assertIn("Region", df.columns)
-        self.assertIn("Country", df.columns)
+        download_file(url, output_path)
 
-    def test_fetch_geoip2_details(self):
-        ip_addresses = "8.8.8.8"
-        df = fetch_geoip2_details(ip_addresses, self.cache, self.progress, self.status_label, self.root)
-        self.assertFalse(df.empty)
-        self.assertIn("IP Address", df.columns)
-        self.assertIn("City", df.columns)
-        self.assertIn("Region", df.columns)
-        self.assertIn("Country", df.columns)
+        mock_get.assert_called_once_with(url)
+        self.assertTrue(os.path.exists(output_path))
+        with open(output_path, 'rb') as file:
+            self.assertEqual(file.read(), b'file content')
+        
+        if os.path.exists("test_output"):
+            os.remove(output_path)
+            os.rmdir("test_output")
+
+    @patch('ip_location_finder.os.makedirs')
+    @patch('ip_location_finder.pd.DataFrame.to_csv')
+    def test_save_to_file(self, mock_to_csv, mock_makedirs):
+        data = [{'IP': '127.0.0.1', 'Hostname': 'localhost'}]
+        file_path = 'output/ip_lookup_results.csv'
+
+        save_to_file(data)
+
+        mock_makedirs.assert_called_once_with(os.path.dirname(file_path), exist_ok=True)
+        mock_to_csv.assert_called_once()
+        mock_to_csv.assert_called_with(file_path, index=False)
+
+    @patch('ip_location_finder.subprocess.run')
+    @patch('builtins.open', new_callable=mock_open, read_data=b'\x1f\x8b')
+    def test_extract_gzip(self, mock_file, mock_run):
+        input_path = "test_input.gz"
+        output_path = "test_output.txt"
+        
+        extract_gzip(input_path, output_path)
+        
+        mock_file.assert_called_once_with(input_path, 'rb')
+        mock_run.assert_called_once_with(f"gunzip -c {input_path} > {output_path}", shell=True, check=True)
+
+    @patch('ip_location_finder.os.path.exists')
+    @patch('ip_location_finder.geoip2.database.Reader')
+    def test_fetch_country_asn_details(self, mock_reader, mock_exists):
+        mock_exists.side_effect = lambda path: path == COUNTRY_ASN_DB_PATH
+        mock_reader.return_value.asn.return_value.autonomous_system_number = 12345
+        mock_reader.return_value.asn.return_value.autonomous_system_organization = 'Test Org'
+        mock_reader.return_value.country.return_value.country.name = 'Test Country'
+        mock_reader.return_value.country.return_value.country.iso_code = 'TC'
+        
+        ip_address = "8.8.8.8"
+        result = fetch_country_asn_details(ip_address)
+
+        expected_result = {
+            'ASN': 12345,
+            'ASN Org': 'Test Org',
+            'Country': 'Test Country',
+            'Country ISO Code': 'TC'
+        }
+
+        self.assertEqual(result, expected_result)
+        mock_reader.return_value.close.assert_called_once()
 
 if __name__ == '__main__':
     unittest.main()
