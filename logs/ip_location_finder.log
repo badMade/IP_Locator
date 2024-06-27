@@ -611,3 +611,866 @@
 2024-06-27 00:03:31,235 - ERROR - Error fetching Country + ASN details for IP: 98.237.123.231. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
 2024-06-27 00:03:31,406 - ERROR - Error fetching Country + ASN details for IP: 98.252.189.7. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
 2024-06-27 00:03:34,756 - INFO - Results saved to output/ip_lookup_results.csv
+2024-06-27 00:13:09,311 - INFO - Logging initialized.
+2024-06-27 00:13:09,319 - INFO - Data source: IPinfo (https://ipinfo.io)
+2024-06-27 00:13:09,319 - INFO - Country + ASN database already exists.
+2024-06-27 00:13:18,865 - ERROR - Error fetching Country + ASN details for IP: 71.73.84.23. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:19,100 - INFO - Fetched details from IPinfo for IP: 71.73.84.23
+2024-06-27 00:13:19,109 - ERROR - Error fetching Country + ASN details for IP: 73.253.185.148. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:19,229 - INFO - Fetched details from IPinfo for IP: 73.253.185.148
+2024-06-27 00:13:19,238 - ERROR - Error fetching Country + ASN details for IP: 174.168.51.95. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:19,414 - INFO - Fetched details from IPinfo for IP: 174.168.51.95
+2024-06-27 00:13:19,422 - ERROR - Error fetching Country + ASN details for IP: 69.253.185.201. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:19,543 - INFO - Fetched details from IPinfo for IP: 69.253.185.201
+2024-06-27 00:13:19,552 - ERROR - Error fetching Country + ASN details for IP: 24.113.83.136. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:19,721 - INFO - Fetched details from IPinfo for IP: 24.113.83.136
+2024-06-27 00:13:19,729 - ERROR - Error fetching Country + ASN details for IP: 174.73.206.191. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:19,865 - INFO - Fetched details from IPinfo for IP: 174.73.206.191
+2024-06-27 00:13:19,873 - ERROR - Error fetching Country + ASN details for IP: 174.64.78.79. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:20,003 - INFO - Fetched details from IPinfo for IP: 174.64.78.79
+2024-06-27 00:13:20,011 - ERROR - Error fetching Country + ASN details for IP: 73.254.120.229. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:20,127 - INFO - Fetched details from IPinfo for IP: 73.254.120.229
+2024-06-27 00:13:20,135 - ERROR - Error fetching Country + ASN details for IP: 173.70.230.49. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:20,256 - INFO - Fetched details from IPinfo for IP: 173.70.230.49
+2024-06-27 00:13:20,265 - ERROR - Error fetching Country + ASN details for IP: 207.228.39.253. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:20,396 - INFO - Fetched details from IPinfo for IP: 207.228.39.253
+2024-06-27 00:13:20,405 - ERROR - Error fetching Country + ASN details for IP: 35.145.102.104. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:20,525 - INFO - Fetched details from IPinfo for IP: 35.145.102.104
+2024-06-27 00:13:20,533 - ERROR - Error fetching Country + ASN details for IP: 24.243.243.153. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:20,666 - INFO - Fetched details from IPinfo for IP: 24.243.243.153
+2024-06-27 00:13:20,675 - ERROR - Error fetching Country + ASN details for IP: 172.58.209.20. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:20,831 - INFO - Fetched details from IPinfo for IP: 172.58.209.20
+2024-06-27 00:13:20,839 - ERROR - Error fetching Country + ASN details for IP: 172.58.131.246. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:20,977 - INFO - Fetched details from IPinfo for IP: 172.58.131.246
+2024-06-27 00:13:20,983 - ERROR - Error fetching Country + ASN details for IP: 131.93.150.196. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:21,098 - INFO - Fetched details from IPinfo for IP: 131.93.150.196
+2024-06-27 00:13:21,105 - ERROR - Error fetching Country + ASN details for IP: 76.234.152.222. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:21,214 - INFO - Fetched details from IPinfo for IP: 76.234.152.222
+2024-06-27 00:13:21,222 - ERROR - Error fetching Country + ASN details for IP: 76.37.26.47. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:21,343 - INFO - Fetched details from IPinfo for IP: 76.37.26.47
+2024-06-27 00:13:21,352 - ERROR - Error fetching Country + ASN details for IP: 204.14.36.70. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:21,480 - INFO - Fetched details from IPinfo for IP: 204.14.36.70
+2024-06-27 00:13:21,488 - ERROR - Error fetching Country + ASN details for IP: 96.227.101.106. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:21,605 - INFO - Fetched details from IPinfo for IP: 96.227.101.106
+2024-06-27 00:13:21,613 - ERROR - Error fetching Country + ASN details for IP: 68.132.11.116. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:21,732 - INFO - Fetched details from IPinfo for IP: 68.132.11.116
+2024-06-27 00:13:21,740 - ERROR - Error fetching Country + ASN details for IP: 172.56.186.4. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:21,886 - INFO - Fetched details from IPinfo for IP: 172.56.186.4
+2024-06-27 00:13:21,894 - ERROR - Error fetching Country + ASN details for IP: 172.56.208.82. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:22,029 - INFO - Fetched details from IPinfo for IP: 172.56.208.82
+2024-06-27 00:13:22,037 - ERROR - Error fetching Country + ASN details for IP: 8.15.177.199. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:22,157 - INFO - Fetched details from IPinfo for IP: 8.15.177.199
+2024-06-27 00:13:22,165 - ERROR - Error fetching Country + ASN details for IP: 67.191.8.106. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:22,299 - INFO - Fetched details from IPinfo for IP: 67.191.8.106
+2024-06-27 00:13:22,307 - ERROR - Error fetching Country + ASN details for IP: 104.6.133.37. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:22,427 - INFO - Fetched details from IPinfo for IP: 104.6.133.37
+2024-06-27 00:13:22,436 - ERROR - Error fetching Country + ASN details for IP: 50.90.148.98. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:22,573 - INFO - Fetched details from IPinfo for IP: 50.90.148.98
+2024-06-27 00:13:22,601 - ERROR - Error fetching Country + ASN details for IP: 73.165.25.88. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:22,727 - INFO - Fetched details from IPinfo for IP: 73.165.25.88
+2024-06-27 00:13:22,736 - ERROR - Error fetching Country + ASN details for IP: 75.232.119.52. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:22,851 - INFO - Fetched details from IPinfo for IP: 75.232.119.52
+2024-06-27 00:13:22,859 - ERROR - Error fetching Country + ASN details for IP: 108.174.185.162. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:22,999 - INFO - Fetched details from IPinfo for IP: 108.174.185.162
+2024-06-27 00:13:23,007 - ERROR - Error fetching Country + ASN details for IP: 173.22.104.154. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:23,150 - INFO - Fetched details from IPinfo for IP: 173.22.104.154
+2024-06-27 00:13:23,158 - ERROR - Error fetching Country + ASN details for IP: 47.148.86.72. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:23,303 - INFO - Fetched details from IPinfo for IP: 47.148.86.72
+2024-06-27 00:13:23,311 - ERROR - Error fetching Country + ASN details for IP: 142.214.155.139. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:23,456 - INFO - Fetched details from IPinfo for IP: 142.214.155.139
+2024-06-27 00:13:23,464 - ERROR - Error fetching Country + ASN details for IP: 73.197.236.224. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:23,601 - INFO - Fetched details from IPinfo for IP: 73.197.236.224
+2024-06-27 00:13:23,610 - ERROR - Error fetching Country + ASN details for IP: 104.174.211.112. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:23,730 - INFO - Fetched details from IPinfo for IP: 104.174.211.112
+2024-06-27 00:13:23,738 - ERROR - Error fetching Country + ASN details for IP: 138.229.235.120. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:23,874 - INFO - Fetched details from IPinfo for IP: 138.229.235.120
+2024-06-27 00:13:23,882 - ERROR - Error fetching Country + ASN details for IP: 108.165.115.135. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:24,005 - INFO - Fetched details from IPinfo for IP: 108.165.115.135
+2024-06-27 00:13:24,013 - ERROR - Error fetching Country + ASN details for IP: 142.255.126.79. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:24,132 - INFO - Fetched details from IPinfo for IP: 142.255.126.79
+2024-06-27 00:13:24,140 - ERROR - Error fetching Country + ASN details for IP: 108.41.188.44. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:24,274 - INFO - Fetched details from IPinfo for IP: 108.41.188.44
+2024-06-27 00:13:24,282 - ERROR - Error fetching Country + ASN details for IP: 76.138.47.238. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:24,423 - INFO - Fetched details from IPinfo for IP: 76.138.47.238
+2024-06-27 00:13:24,431 - ERROR - Error fetching Country + ASN details for IP: 75.191.65.74. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:24,557 - INFO - Fetched details from IPinfo for IP: 75.191.65.74
+2024-06-27 00:13:24,565 - ERROR - Error fetching Country + ASN details for IP: 73.58.11.241. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:24,732 - INFO - Fetched details from IPinfo for IP: 73.58.11.241
+2024-06-27 00:13:24,740 - ERROR - Error fetching Country + ASN details for IP: 143.55.90.250. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:24,860 - INFO - Fetched details from IPinfo for IP: 143.55.90.250
+2024-06-27 00:13:24,868 - ERROR - Error fetching Country + ASN details for IP: 45.42.141.113. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:25,041 - INFO - Fetched details from IPinfo for IP: 45.42.141.113
+2024-06-27 00:13:25,050 - ERROR - Error fetching Country + ASN details for IP: 47.150.133.174. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:25,167 - INFO - Fetched details from IPinfo for IP: 47.150.133.174
+2024-06-27 00:13:25,175 - ERROR - Error fetching Country + ASN details for IP: 50.110.243.145. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:25,331 - INFO - Fetched details from IPinfo for IP: 50.110.243.145
+2024-06-27 00:13:25,339 - ERROR - Error fetching Country + ASN details for IP: 99.32.159.24. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:25,463 - INFO - Fetched details from IPinfo for IP: 99.32.159.24
+2024-06-27 00:13:25,471 - ERROR - Error fetching Country + ASN details for IP: 172.59.97.158. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:25,597 - INFO - Fetched details from IPinfo for IP: 172.59.97.158
+2024-06-27 00:13:25,605 - ERROR - Error fetching Country + ASN details for IP: 108.237.171.107. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:25,753 - INFO - Fetched details from IPinfo for IP: 108.237.171.107
+2024-06-27 00:13:25,761 - ERROR - Error fetching Country + ASN details for IP: 135.134.227.13. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:25,903 - INFO - Fetched details from IPinfo for IP: 135.134.227.13
+2024-06-27 00:13:25,911 - ERROR - Error fetching Country + ASN details for IP: 98.216.72.38. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:26,066 - INFO - Fetched details from IPinfo for IP: 98.216.72.38
+2024-06-27 00:13:26,074 - ERROR - Error fetching Country + ASN details for IP: 100.1.57.119. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:26,208 - INFO - Fetched details from IPinfo for IP: 100.1.57.119
+2024-06-27 00:13:26,216 - ERROR - Error fetching Country + ASN details for IP: 206.217.8.23. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:26,332 - INFO - Fetched details from IPinfo for IP: 206.217.8.23
+2024-06-27 00:13:26,340 - ERROR - Error fetching Country + ASN details for IP: 99.42.123.77. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:26,501 - INFO - Fetched details from IPinfo for IP: 99.42.123.77
+2024-06-27 00:13:26,507 - ERROR - Error fetching Country + ASN details for IP: 73.12.194.148. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:26,633 - INFO - Fetched details from IPinfo for IP: 73.12.194.148
+2024-06-27 00:13:26,640 - ERROR - Error fetching Country + ASN details for IP: 35.145.42.0. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:26,755 - INFO - Fetched details from IPinfo for IP: 35.145.42.0
+2024-06-27 00:13:26,763 - ERROR - Error fetching Country + ASN details for IP: 68.107.65.248. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:26,872 - INFO - Fetched details from IPinfo for IP: 68.107.65.248
+2024-06-27 00:13:26,880 - ERROR - Error fetching Country + ASN details for IP: 108.175.188.61. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:26,992 - INFO - Fetched details from IPinfo for IP: 108.175.188.61
+2024-06-27 00:13:27,000 - ERROR - Error fetching Country + ASN details for IP: 99.56.186.54. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:27,118 - INFO - Fetched details from IPinfo for IP: 99.56.186.54
+2024-06-27 00:13:27,126 - ERROR - Error fetching Country + ASN details for IP: 72.211.148.150. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:27,254 - INFO - Fetched details from IPinfo for IP: 72.211.148.150
+2024-06-27 00:13:27,262 - ERROR - Error fetching Country + ASN details for IP: 208.66.212.229. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:27,385 - INFO - Fetched details from IPinfo for IP: 208.66.212.229
+2024-06-27 00:13:27,393 - ERROR - Error fetching Country + ASN details for IP: 76.90.125.239. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:27,505 - INFO - Fetched details from IPinfo for IP: 76.90.125.239
+2024-06-27 00:13:27,513 - ERROR - Error fetching Country + ASN details for IP: 71.209.202.3. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:27,657 - INFO - Fetched details from IPinfo for IP: 71.209.202.3
+2024-06-27 00:13:27,665 - ERROR - Error fetching Country + ASN details for IP: 82.86.70.135. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:27,789 - INFO - Fetched details from IPinfo for IP: 82.86.70.135
+2024-06-27 00:13:27,797 - ERROR - Error fetching Country + ASN details for IP: 71.76.37.248. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:27,906 - INFO - Fetched details from IPinfo for IP: 71.76.37.248
+2024-06-27 00:13:27,914 - ERROR - Error fetching Country + ASN details for IP: 108.6.112.204. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:28,055 - INFO - Fetched details from IPinfo for IP: 108.6.112.204
+2024-06-27 00:13:28,064 - ERROR - Error fetching Country + ASN details for IP: 71.245.161.137. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:28,184 - INFO - Fetched details from IPinfo for IP: 71.245.161.137
+2024-06-27 00:13:28,192 - ERROR - Error fetching Country + ASN details for IP: 172.59.187.175. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:28,326 - INFO - Fetched details from IPinfo for IP: 172.59.187.175
+2024-06-27 00:13:28,335 - ERROR - Error fetching Country + ASN details for IP: 35.148.187.231. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:28,466 - INFO - Fetched details from IPinfo for IP: 35.148.187.231
+2024-06-27 00:13:28,474 - ERROR - Error fetching Country + ASN details for IP: 73.134.227.22. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:28,614 - INFO - Fetched details from IPinfo for IP: 73.134.227.22
+2024-06-27 00:13:28,622 - ERROR - Error fetching Country + ASN details for IP: 73.104.233.59. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:28,740 - INFO - Fetched details from IPinfo for IP: 73.104.233.59
+2024-06-27 00:13:28,748 - ERROR - Error fetching Country + ASN details for IP: 75.44.151.81. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:28,903 - INFO - Fetched details from IPinfo for IP: 75.44.151.81
+2024-06-27 00:13:28,912 - ERROR - Error fetching Country + ASN details for IP: 71.71.135.85. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:29,030 - INFO - Fetched details from IPinfo for IP: 71.71.135.85
+2024-06-27 00:13:29,037 - ERROR - Error fetching Country + ASN details for IP: 184.97.151.29. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:29,175 - INFO - Fetched details from IPinfo for IP: 184.97.151.29
+2024-06-27 00:13:29,183 - ERROR - Error fetching Country + ASN details for IP: 76.116.93.98. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:29,329 - INFO - Fetched details from IPinfo for IP: 76.116.93.98
+2024-06-27 00:13:29,337 - ERROR - Error fetching Country + ASN details for IP: 76.35.77.111. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:29,458 - INFO - Fetched details from IPinfo for IP: 76.35.77.111
+2024-06-27 00:13:29,466 - ERROR - Error fetching Country + ASN details for IP: 67.252.72.100. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:29,589 - INFO - Fetched details from IPinfo for IP: 67.252.72.100
+2024-06-27 00:13:29,597 - ERROR - Error fetching Country + ASN details for IP: 100.1.116.62. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:29,719 - INFO - Fetched details from IPinfo for IP: 100.1.116.62
+2024-06-27 00:13:29,728 - ERROR - Error fetching Country + ASN details for IP: 47.16.187.188. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:29,845 - INFO - Fetched details from IPinfo for IP: 47.16.187.188
+2024-06-27 00:13:29,853 - ERROR - Error fetching Country + ASN details for IP: 73.49.31.252. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:29,987 - INFO - Fetched details from IPinfo for IP: 73.49.31.252
+2024-06-27 00:13:29,999 - ERROR - Error fetching Country + ASN details for IP: 76.235.245.164. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:30,138 - INFO - Fetched details from IPinfo for IP: 76.235.245.164
+2024-06-27 00:13:30,147 - ERROR - Error fetching Country + ASN details for IP: 73.139.199.144. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:30,265 - INFO - Fetched details from IPinfo for IP: 73.139.199.144
+2024-06-27 00:13:30,273 - ERROR - Error fetching Country + ASN details for IP: 73.216.101.203. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:30,447 - INFO - Fetched details from IPinfo for IP: 73.216.101.203
+2024-06-27 00:13:30,455 - ERROR - Error fetching Country + ASN details for IP: 24.183.244.183. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:30,579 - INFO - Fetched details from IPinfo for IP: 24.183.244.183
+2024-06-27 00:13:30,587 - ERROR - Error fetching Country + ASN details for IP: 68.66.29.238. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:30,733 - INFO - Fetched details from IPinfo for IP: 68.66.29.238
+2024-06-27 00:13:30,742 - ERROR - Error fetching Country + ASN details for IP: 24.158.120.230. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:30,879 - INFO - Fetched details from IPinfo for IP: 24.158.120.230
+2024-06-27 00:13:30,887 - ERROR - Error fetching Country + ASN details for IP: 76.35.3.115. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:31,033 - INFO - Fetched details from IPinfo for IP: 76.35.3.115
+2024-06-27 00:13:31,041 - ERROR - Error fetching Country + ASN details for IP: 68.202.231.164. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:31,176 - INFO - Fetched details from IPinfo for IP: 68.202.231.164
+2024-06-27 00:13:31,185 - ERROR - Error fetching Country + ASN details for IP: 35.134.203.19. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:31,320 - INFO - Fetched details from IPinfo for IP: 35.134.203.19
+2024-06-27 00:13:31,327 - ERROR - Error fetching Country + ASN details for IP: 45.24.12.225. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:31,464 - INFO - Fetched details from IPinfo for IP: 45.24.12.225
+2024-06-27 00:13:31,472 - ERROR - Error fetching Country + ASN details for IP: 144.163.66.15. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:31,628 - INFO - Fetched details from IPinfo for IP: 144.163.66.15
+2024-06-27 00:13:31,637 - ERROR - Error fetching Country + ASN details for IP: 70.177.144.139. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:31,753 - INFO - Fetched details from IPinfo for IP: 70.177.144.139
+2024-06-27 00:13:31,761 - ERROR - Error fetching Country + ASN details for IP: 24.34.234.139. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:31,871 - INFO - Fetched details from IPinfo for IP: 24.34.234.139
+2024-06-27 00:13:31,879 - ERROR - Error fetching Country + ASN details for IP: 24.41.101.90. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:32,021 - INFO - Fetched details from IPinfo for IP: 24.41.101.90
+2024-06-27 00:13:32,028 - ERROR - Error fetching Country + ASN details for IP: 192.24.102.225. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:32,144 - INFO - Fetched details from IPinfo for IP: 192.24.102.225
+2024-06-27 00:13:32,152 - ERROR - Error fetching Country + ASN details for IP: 47.198.113.18. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:32,293 - INFO - Fetched details from IPinfo for IP: 47.198.113.18
+2024-06-27 00:13:32,301 - ERROR - Error fetching Country + ASN details for IP: 45.46.81.235. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:32,418 - INFO - Fetched details from IPinfo for IP: 45.46.81.235
+2024-06-27 00:13:32,427 - ERROR - Error fetching Country + ASN details for IP: 47.199.221.23. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:32,550 - INFO - Fetched details from IPinfo for IP: 47.199.221.23
+2024-06-27 00:13:32,558 - ERROR - Error fetching Country + ASN details for IP: 174.61.102.126. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:32,698 - INFO - Fetched details from IPinfo for IP: 174.61.102.126
+2024-06-27 00:13:32,706 - ERROR - Error fetching Country + ASN details for IP: 172.118.100.165. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:32,844 - INFO - Fetched details from IPinfo for IP: 172.118.100.165
+2024-06-27 00:13:32,852 - ERROR - Error fetching Country + ASN details for IP: 99.137.150.9. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:32,973 - INFO - Fetched details from IPinfo for IP: 99.137.150.9
+2024-06-27 00:13:32,982 - ERROR - Error fetching Country + ASN details for IP: 70.126.16.230. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:33,135 - INFO - Fetched details from IPinfo for IP: 70.126.16.230
+2024-06-27 00:13:33,143 - ERROR - Error fetching Country + ASN details for IP: 73.235.175.103. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:33,280 - INFO - Fetched details from IPinfo for IP: 73.235.175.103
+2024-06-27 00:13:33,289 - ERROR - Error fetching Country + ASN details for IP: 24.28.99.245. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:33,417 - INFO - Fetched details from IPinfo for IP: 24.28.99.245
+2024-06-27 00:13:33,425 - ERROR - Error fetching Country + ASN details for IP: 68.118.250.207. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:33,554 - INFO - Fetched details from IPinfo for IP: 68.118.250.207
+2024-06-27 00:13:33,562 - ERROR - Error fetching Country + ASN details for IP: 69.138.164.237. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:33,689 - INFO - Fetched details from IPinfo for IP: 69.138.164.237
+2024-06-27 00:13:33,698 - ERROR - Error fetching Country + ASN details for IP: 98.237.123.231. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:33,841 - INFO - Fetched details from IPinfo for IP: 98.237.123.231
+2024-06-27 00:13:33,850 - ERROR - Error fetching Country + ASN details for IP: 98.252.189.7. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:33,972 - INFO - Fetched details from IPinfo for IP: 98.252.189.7
+2024-06-27 00:13:33,989 - ERROR - Error fetching Country + ASN details for IP: 71.73.84.23. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:34,109 - INFO - Fetched details from IPinfo for IP: 71.73.84.23
+2024-06-27 00:13:34,118 - ERROR - Error fetching Country + ASN details for IP: 73.253.185.148. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:34,261 - INFO - Fetched details from IPinfo for IP: 73.253.185.148
+2024-06-27 00:13:34,269 - ERROR - Error fetching Country + ASN details for IP: 174.168.51.95. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:34,388 - INFO - Fetched details from IPinfo for IP: 174.168.51.95
+2024-06-27 00:13:34,396 - ERROR - Error fetching Country + ASN details for IP: 69.253.185.201. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:34,521 - INFO - Fetched details from IPinfo for IP: 69.253.185.201
+2024-06-27 00:13:34,530 - ERROR - Error fetching Country + ASN details for IP: 24.113.83.136. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:34,648 - INFO - Fetched details from IPinfo for IP: 24.113.83.136
+2024-06-27 00:13:34,656 - ERROR - Error fetching Country + ASN details for IP: 174.73.206.191. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:34,815 - INFO - Fetched details from IPinfo for IP: 174.73.206.191
+2024-06-27 00:13:34,824 - ERROR - Error fetching Country + ASN details for IP: 174.64.78.79. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:34,948 - INFO - Fetched details from IPinfo for IP: 174.64.78.79
+2024-06-27 00:13:34,956 - ERROR - Error fetching Country + ASN details for IP: 73.254.120.229. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:35,075 - INFO - Fetched details from IPinfo for IP: 73.254.120.229
+2024-06-27 00:13:35,084 - ERROR - Error fetching Country + ASN details for IP: 173.70.230.49. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:35,235 - INFO - Fetched details from IPinfo for IP: 173.70.230.49
+2024-06-27 00:13:35,243 - ERROR - Error fetching Country + ASN details for IP: 207.228.39.253. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:35,377 - INFO - Fetched details from IPinfo for IP: 207.228.39.253
+2024-06-27 00:13:35,385 - ERROR - Error fetching Country + ASN details for IP: 35.145.102.104. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:35,509 - INFO - Fetched details from IPinfo for IP: 35.145.102.104
+2024-06-27 00:13:35,517 - ERROR - Error fetching Country + ASN details for IP: 24.243.243.153. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:35,666 - INFO - Fetched details from IPinfo for IP: 24.243.243.153
+2024-06-27 00:13:35,674 - ERROR - Error fetching Country + ASN details for IP: 172.58.209.20. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:35,801 - INFO - Fetched details from IPinfo for IP: 172.58.209.20
+2024-06-27 00:13:35,809 - ERROR - Error fetching Country + ASN details for IP: 172.58.131.246. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:35,947 - INFO - Fetched details from IPinfo for IP: 172.58.131.246
+2024-06-27 00:13:35,956 - ERROR - Error fetching Country + ASN details for IP: 131.93.150.196. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:36,092 - INFO - Fetched details from IPinfo for IP: 131.93.150.196
+2024-06-27 00:13:36,100 - ERROR - Error fetching Country + ASN details for IP: 76.234.152.222. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:36,220 - INFO - Fetched details from IPinfo for IP: 76.234.152.222
+2024-06-27 00:13:36,228 - ERROR - Error fetching Country + ASN details for IP: 76.37.26.47. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:36,357 - INFO - Fetched details from IPinfo for IP: 76.37.26.47
+2024-06-27 00:13:36,366 - ERROR - Error fetching Country + ASN details for IP: 204.14.36.70. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:36,485 - INFO - Fetched details from IPinfo for IP: 204.14.36.70
+2024-06-27 00:13:36,493 - ERROR - Error fetching Country + ASN details for IP: 96.227.101.106. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:36,634 - INFO - Fetched details from IPinfo for IP: 96.227.101.106
+2024-06-27 00:13:36,642 - ERROR - Error fetching Country + ASN details for IP: 68.132.11.116. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:36,782 - INFO - Fetched details from IPinfo for IP: 68.132.11.116
+2024-06-27 00:13:36,804 - ERROR - Error fetching Country + ASN details for IP: 172.56.186.4. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:36,968 - INFO - Fetched details from IPinfo for IP: 172.56.186.4
+2024-06-27 00:13:36,976 - ERROR - Error fetching Country + ASN details for IP: 172.56.208.82. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:37,097 - INFO - Fetched details from IPinfo for IP: 172.56.208.82
+2024-06-27 00:13:37,105 - ERROR - Error fetching Country + ASN details for IP: 8.15.177.199. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:37,223 - INFO - Fetched details from IPinfo for IP: 8.15.177.199
+2024-06-27 00:13:37,231 - ERROR - Error fetching Country + ASN details for IP: 67.191.8.106. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:37,346 - INFO - Fetched details from IPinfo for IP: 67.191.8.106
+2024-06-27 00:13:37,354 - ERROR - Error fetching Country + ASN details for IP: 104.6.133.37. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:37,474 - INFO - Fetched details from IPinfo for IP: 104.6.133.37
+2024-06-27 00:13:37,482 - ERROR - Error fetching Country + ASN details for IP: 50.90.148.98. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:37,602 - INFO - Fetched details from IPinfo for IP: 50.90.148.98
+2024-06-27 00:13:37,610 - ERROR - Error fetching Country + ASN details for IP: 73.165.25.88. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:37,725 - INFO - Fetched details from IPinfo for IP: 73.165.25.88
+2024-06-27 00:13:37,734 - ERROR - Error fetching Country + ASN details for IP: 75.232.119.52. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:37,885 - INFO - Fetched details from IPinfo for IP: 75.232.119.52
+2024-06-27 00:13:37,893 - ERROR - Error fetching Country + ASN details for IP: 108.174.185.162. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:38,030 - INFO - Fetched details from IPinfo for IP: 108.174.185.162
+2024-06-27 00:13:38,039 - ERROR - Error fetching Country + ASN details for IP: 173.22.104.154. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:38,183 - INFO - Fetched details from IPinfo for IP: 173.22.104.154
+2024-06-27 00:13:38,191 - ERROR - Error fetching Country + ASN details for IP: 47.148.86.72. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:38,312 - INFO - Fetched details from IPinfo for IP: 47.148.86.72
+2024-06-27 00:13:38,320 - ERROR - Error fetching Country + ASN details for IP: 142.214.155.139. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:38,452 - INFO - Fetched details from IPinfo for IP: 142.214.155.139
+2024-06-27 00:13:38,460 - ERROR - Error fetching Country + ASN details for IP: 73.197.236.224. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:38,603 - INFO - Fetched details from IPinfo for IP: 73.197.236.224
+2024-06-27 00:13:38,611 - ERROR - Error fetching Country + ASN details for IP: 104.174.211.112. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:38,723 - INFO - Fetched details from IPinfo for IP: 104.174.211.112
+2024-06-27 00:13:38,732 - ERROR - Error fetching Country + ASN details for IP: 138.229.235.120. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:38,856 - INFO - Fetched details from IPinfo for IP: 138.229.235.120
+2024-06-27 00:13:38,865 - ERROR - Error fetching Country + ASN details for IP: 108.165.115.135. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:38,979 - INFO - Fetched details from IPinfo for IP: 108.165.115.135
+2024-06-27 00:13:38,988 - ERROR - Error fetching Country + ASN details for IP: 142.255.126.79. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:39,126 - INFO - Fetched details from IPinfo for IP: 142.255.126.79
+2024-06-27 00:13:39,135 - ERROR - Error fetching Country + ASN details for IP: 108.41.188.44. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:39,248 - INFO - Fetched details from IPinfo for IP: 108.41.188.44
+2024-06-27 00:13:39,256 - ERROR - Error fetching Country + ASN details for IP: 76.138.47.238. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:39,392 - INFO - Fetched details from IPinfo for IP: 76.138.47.238
+2024-06-27 00:13:39,400 - ERROR - Error fetching Country + ASN details for IP: 75.191.65.74. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:39,537 - INFO - Fetched details from IPinfo for IP: 75.191.65.74
+2024-06-27 00:13:39,546 - ERROR - Error fetching Country + ASN details for IP: 73.58.11.241. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:39,688 - INFO - Fetched details from IPinfo for IP: 73.58.11.241
+2024-06-27 00:13:39,695 - ERROR - Error fetching Country + ASN details for IP: 143.55.90.250. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:39,814 - INFO - Fetched details from IPinfo for IP: 143.55.90.250
+2024-06-27 00:13:39,823 - ERROR - Error fetching Country + ASN details for IP: 45.42.141.113. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:39,983 - INFO - Fetched details from IPinfo for IP: 45.42.141.113
+2024-06-27 00:13:39,991 - ERROR - Error fetching Country + ASN details for IP: 47.150.133.174. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:40,109 - INFO - Fetched details from IPinfo for IP: 47.150.133.174
+2024-06-27 00:13:40,117 - ERROR - Error fetching Country + ASN details for IP: 50.110.243.145. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:40,255 - INFO - Fetched details from IPinfo for IP: 50.110.243.145
+2024-06-27 00:13:40,263 - ERROR - Error fetching Country + ASN details for IP: 99.32.159.24. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:40,380 - INFO - Fetched details from IPinfo for IP: 99.32.159.24
+2024-06-27 00:13:40,389 - ERROR - Error fetching Country + ASN details for IP: 172.59.97.158. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:40,524 - INFO - Fetched details from IPinfo for IP: 172.59.97.158
+2024-06-27 00:13:40,532 - ERROR - Error fetching Country + ASN details for IP: 108.237.171.107. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:40,694 - INFO - Fetched details from IPinfo for IP: 108.237.171.107
+2024-06-27 00:13:40,703 - ERROR - Error fetching Country + ASN details for IP: 135.134.227.13. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:40,844 - INFO - Fetched details from IPinfo for IP: 135.134.227.13
+2024-06-27 00:13:40,852 - ERROR - Error fetching Country + ASN details for IP: 98.216.72.38. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:41,005 - INFO - Fetched details from IPinfo for IP: 98.216.72.38
+2024-06-27 00:13:41,013 - ERROR - Error fetching Country + ASN details for IP: 100.1.57.119. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:41,128 - INFO - Fetched details from IPinfo for IP: 100.1.57.119
+2024-06-27 00:13:41,136 - ERROR - Error fetching Country + ASN details for IP: 206.217.8.23. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:41,282 - INFO - Fetched details from IPinfo for IP: 206.217.8.23
+2024-06-27 00:13:41,290 - ERROR - Error fetching Country + ASN details for IP: 99.42.123.77. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:41,405 - INFO - Fetched details from IPinfo for IP: 99.42.123.77
+2024-06-27 00:13:41,414 - ERROR - Error fetching Country + ASN details for IP: 73.12.194.148. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:41,531 - INFO - Fetched details from IPinfo for IP: 73.12.194.148
+2024-06-27 00:13:41,540 - ERROR - Error fetching Country + ASN details for IP: 35.145.42.0. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:41,692 - INFO - Fetched details from IPinfo for IP: 35.145.42.0
+2024-06-27 00:13:41,700 - ERROR - Error fetching Country + ASN details for IP: 68.107.65.248. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:41,823 - INFO - Fetched details from IPinfo for IP: 68.107.65.248
+2024-06-27 00:13:41,831 - ERROR - Error fetching Country + ASN details for IP: 108.175.188.61. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:41,969 - INFO - Fetched details from IPinfo for IP: 108.175.188.61
+2024-06-27 00:13:41,977 - ERROR - Error fetching Country + ASN details for IP: 99.56.186.54. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:42,125 - INFO - Fetched details from IPinfo for IP: 99.56.186.54
+2024-06-27 00:13:42,133 - ERROR - Error fetching Country + ASN details for IP: 72.211.148.150. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:42,270 - INFO - Fetched details from IPinfo for IP: 72.211.148.150
+2024-06-27 00:13:42,278 - ERROR - Error fetching Country + ASN details for IP: 208.66.212.229. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:42,414 - INFO - Fetched details from IPinfo for IP: 208.66.212.229
+2024-06-27 00:13:42,423 - ERROR - Error fetching Country + ASN details for IP: 76.90.125.239. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:42,541 - INFO - Fetched details from IPinfo for IP: 76.90.125.239
+2024-06-27 00:13:42,548 - ERROR - Error fetching Country + ASN details for IP: 71.209.202.3. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:42,667 - INFO - Fetched details from IPinfo for IP: 71.209.202.3
+2024-06-27 00:13:42,675 - ERROR - Error fetching Country + ASN details for IP: 82.86.70.135. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:42,793 - INFO - Fetched details from IPinfo for IP: 82.86.70.135
+2024-06-27 00:13:42,801 - ERROR - Error fetching Country + ASN details for IP: 71.76.37.248. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:42,940 - INFO - Fetched details from IPinfo for IP: 71.76.37.248
+2024-06-27 00:13:42,949 - ERROR - Error fetching Country + ASN details for IP: 108.6.112.204. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:43,102 - INFO - Fetched details from IPinfo for IP: 108.6.112.204
+2024-06-27 00:13:43,109 - ERROR - Error fetching Country + ASN details for IP: 71.245.161.137. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:43,230 - INFO - Fetched details from IPinfo for IP: 71.245.161.137
+2024-06-27 00:13:43,238 - ERROR - Error fetching Country + ASN details for IP: 172.59.187.175. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:43,382 - INFO - Fetched details from IPinfo for IP: 172.59.187.175
+2024-06-27 00:13:43,391 - ERROR - Error fetching Country + ASN details for IP: 35.148.187.231. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:43,530 - INFO - Fetched details from IPinfo for IP: 35.148.187.231
+2024-06-27 00:13:43,538 - ERROR - Error fetching Country + ASN details for IP: 73.134.227.22. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:43,698 - INFO - Fetched details from IPinfo for IP: 73.134.227.22
+2024-06-27 00:13:43,707 - ERROR - Error fetching Country + ASN details for IP: 73.104.233.59. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:43,840 - INFO - Fetched details from IPinfo for IP: 73.104.233.59
+2024-06-27 00:13:43,849 - ERROR - Error fetching Country + ASN details for IP: 75.44.151.81. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:44,007 - INFO - Fetched details from IPinfo for IP: 75.44.151.81
+2024-06-27 00:13:44,015 - ERROR - Error fetching Country + ASN details for IP: 71.71.135.85. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:44,165 - INFO - Fetched details from IPinfo for IP: 71.71.135.85
+2024-06-27 00:13:44,174 - ERROR - Error fetching Country + ASN details for IP: 184.97.151.29. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:44,313 - INFO - Fetched details from IPinfo for IP: 184.97.151.29
+2024-06-27 00:13:44,322 - ERROR - Error fetching Country + ASN details for IP: 76.116.93.98. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:44,460 - INFO - Fetched details from IPinfo for IP: 76.116.93.98
+2024-06-27 00:13:44,468 - ERROR - Error fetching Country + ASN details for IP: 76.35.77.111. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:44,592 - INFO - Fetched details from IPinfo for IP: 76.35.77.111
+2024-06-27 00:13:44,599 - ERROR - Error fetching Country + ASN details for IP: 67.252.72.100. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:44,719 - INFO - Fetched details from IPinfo for IP: 67.252.72.100
+2024-06-27 00:13:44,727 - ERROR - Error fetching Country + ASN details for IP: 100.1.116.62. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:44,864 - INFO - Fetched details from IPinfo for IP: 100.1.116.62
+2024-06-27 00:13:44,872 - ERROR - Error fetching Country + ASN details for IP: 47.16.187.188. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:44,990 - INFO - Fetched details from IPinfo for IP: 47.16.187.188
+2024-06-27 00:13:44,999 - ERROR - Error fetching Country + ASN details for IP: 73.49.31.252. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:45,147 - INFO - Fetched details from IPinfo for IP: 73.49.31.252
+2024-06-27 00:13:45,155 - ERROR - Error fetching Country + ASN details for IP: 76.235.245.164. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:45,292 - INFO - Fetched details from IPinfo for IP: 76.235.245.164
+2024-06-27 00:13:45,300 - ERROR - Error fetching Country + ASN details for IP: 73.139.199.144. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:45,436 - INFO - Fetched details from IPinfo for IP: 73.139.199.144
+2024-06-27 00:13:45,444 - ERROR - Error fetching Country + ASN details for IP: 73.216.101.203. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:45,579 - INFO - Fetched details from IPinfo for IP: 73.216.101.203
+2024-06-27 00:13:45,587 - ERROR - Error fetching Country + ASN details for IP: 24.183.244.183. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:45,720 - INFO - Fetched details from IPinfo for IP: 24.183.244.183
+2024-06-27 00:13:45,728 - ERROR - Error fetching Country + ASN details for IP: 68.66.29.238. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:45,867 - INFO - Fetched details from IPinfo for IP: 68.66.29.238
+2024-06-27 00:13:45,875 - ERROR - Error fetching Country + ASN details for IP: 24.158.120.230. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:46,030 - INFO - Fetched details from IPinfo for IP: 24.158.120.230
+2024-06-27 00:13:46,038 - ERROR - Error fetching Country + ASN details for IP: 76.35.3.115. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:46,156 - INFO - Fetched details from IPinfo for IP: 76.35.3.115
+2024-06-27 00:13:46,164 - ERROR - Error fetching Country + ASN details for IP: 68.202.231.164. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:46,295 - INFO - Fetched details from IPinfo for IP: 68.202.231.164
+2024-06-27 00:13:46,303 - ERROR - Error fetching Country + ASN details for IP: 35.134.203.19. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:46,440 - INFO - Fetched details from IPinfo for IP: 35.134.203.19
+2024-06-27 00:13:46,449 - ERROR - Error fetching Country + ASN details for IP: 45.24.12.225. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:46,583 - INFO - Fetched details from IPinfo for IP: 45.24.12.225
+2024-06-27 00:13:46,592 - ERROR - Error fetching Country + ASN details for IP: 144.163.66.15. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:46,726 - INFO - Fetched details from IPinfo for IP: 144.163.66.15
+2024-06-27 00:13:46,734 - ERROR - Error fetching Country + ASN details for IP: 70.177.144.139. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:46,875 - INFO - Fetched details from IPinfo for IP: 70.177.144.139
+2024-06-27 00:13:46,883 - ERROR - Error fetching Country + ASN details for IP: 24.34.234.139. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:47,002 - INFO - Fetched details from IPinfo for IP: 24.34.234.139
+2024-06-27 00:13:47,010 - ERROR - Error fetching Country + ASN details for IP: 24.41.101.90. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:47,133 - INFO - Fetched details from IPinfo for IP: 24.41.101.90
+2024-06-27 00:13:47,141 - ERROR - Error fetching Country + ASN details for IP: 192.24.102.225. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:47,280 - INFO - Fetched details from IPinfo for IP: 192.24.102.225
+2024-06-27 00:13:47,289 - ERROR - Error fetching Country + ASN details for IP: 47.198.113.18. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:47,426 - INFO - Fetched details from IPinfo for IP: 47.198.113.18
+2024-06-27 00:13:47,434 - ERROR - Error fetching Country + ASN details for IP: 45.46.81.235. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:47,575 - INFO - Fetched details from IPinfo for IP: 45.46.81.235
+2024-06-27 00:13:47,584 - ERROR - Error fetching Country + ASN details for IP: 47.199.221.23. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:47,719 - INFO - Fetched details from IPinfo for IP: 47.199.221.23
+2024-06-27 00:13:47,727 - ERROR - Error fetching Country + ASN details for IP: 174.61.102.126. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:47,848 - INFO - Fetched details from IPinfo for IP: 174.61.102.126
+2024-06-27 00:13:47,863 - ERROR - Error fetching Country + ASN details for IP: 172.118.100.165. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:47,993 - INFO - Fetched details from IPinfo for IP: 172.118.100.165
+2024-06-27 00:13:48,001 - ERROR - Error fetching Country + ASN details for IP: 99.137.150.9. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:48,138 - INFO - Fetched details from IPinfo for IP: 99.137.150.9
+2024-06-27 00:13:48,146 - ERROR - Error fetching Country + ASN details for IP: 70.126.16.230. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:48,281 - INFO - Fetched details from IPinfo for IP: 70.126.16.230
+2024-06-27 00:13:48,289 - ERROR - Error fetching Country + ASN details for IP: 73.235.175.103. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:48,427 - INFO - Fetched details from IPinfo for IP: 73.235.175.103
+2024-06-27 00:13:48,435 - ERROR - Error fetching Country + ASN details for IP: 24.28.99.245. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:48,590 - INFO - Fetched details from IPinfo for IP: 24.28.99.245
+2024-06-27 00:13:48,598 - ERROR - Error fetching Country + ASN details for IP: 68.118.250.207. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:48,733 - INFO - Fetched details from IPinfo for IP: 68.118.250.207
+2024-06-27 00:13:48,741 - ERROR - Error fetching Country + ASN details for IP: 69.138.164.237. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:48,908 - INFO - Fetched details from IPinfo for IP: 69.138.164.237
+2024-06-27 00:13:48,916 - ERROR - Error fetching Country + ASN details for IP: 98.237.123.231. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:49,042 - INFO - Fetched details from IPinfo for IP: 98.237.123.231
+2024-06-27 00:13:49,050 - ERROR - Error fetching Country + ASN details for IP: 98.252.189.7. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:49,163 - INFO - Fetched details from IPinfo for IP: 98.252.189.7
+2024-06-27 00:13:49,353 - ERROR - Error fetching Country + ASN details for IP: 71.73.84.23. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:49,488 - INFO - Fetched details from IPinfo for IP: 71.73.84.23
+2024-06-27 00:13:49,496 - ERROR - Error fetching Country + ASN details for IP: 73.253.185.148. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:49,629 - INFO - Fetched details from IPinfo for IP: 73.253.185.148
+2024-06-27 00:13:49,637 - ERROR - Error fetching Country + ASN details for IP: 174.168.51.95. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:49,778 - INFO - Fetched details from IPinfo for IP: 174.168.51.95
+2024-06-27 00:13:49,786 - ERROR - Error fetching Country + ASN details for IP: 69.253.185.201. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:49,909 - INFO - Fetched details from IPinfo for IP: 69.253.185.201
+2024-06-27 00:13:49,917 - ERROR - Error fetching Country + ASN details for IP: 24.113.83.136. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:50,028 - INFO - Fetched details from IPinfo for IP: 24.113.83.136
+2024-06-27 00:13:50,036 - ERROR - Error fetching Country + ASN details for IP: 174.73.206.191. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:50,173 - INFO - Fetched details from IPinfo for IP: 174.73.206.191
+2024-06-27 00:13:50,181 - ERROR - Error fetching Country + ASN details for IP: 174.64.78.79. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:50,324 - INFO - Fetched details from IPinfo for IP: 174.64.78.79
+2024-06-27 00:13:50,332 - ERROR - Error fetching Country + ASN details for IP: 73.254.120.229. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:50,468 - INFO - Fetched details from IPinfo for IP: 73.254.120.229
+2024-06-27 00:13:50,476 - ERROR - Error fetching Country + ASN details for IP: 173.70.230.49. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:50,620 - INFO - Fetched details from IPinfo for IP: 173.70.230.49
+2024-06-27 00:13:50,629 - ERROR - Error fetching Country + ASN details for IP: 207.228.39.253. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:50,762 - INFO - Fetched details from IPinfo for IP: 207.228.39.253
+2024-06-27 00:13:50,770 - ERROR - Error fetching Country + ASN details for IP: 35.145.102.104. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:50,907 - INFO - Fetched details from IPinfo for IP: 35.145.102.104
+2024-06-27 00:13:50,915 - ERROR - Error fetching Country + ASN details for IP: 24.243.243.153. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:51,051 - INFO - Fetched details from IPinfo for IP: 24.243.243.153
+2024-06-27 00:13:51,059 - ERROR - Error fetching Country + ASN details for IP: 172.58.209.20. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:51,184 - INFO - Fetched details from IPinfo for IP: 172.58.209.20
+2024-06-27 00:13:51,192 - ERROR - Error fetching Country + ASN details for IP: 172.58.131.246. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:51,311 - INFO - Fetched details from IPinfo for IP: 172.58.131.246
+2024-06-27 00:13:51,320 - ERROR - Error fetching Country + ASN details for IP: 131.93.150.196. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:51,434 - INFO - Fetched details from IPinfo for IP: 131.93.150.196
+2024-06-27 00:13:51,442 - ERROR - Error fetching Country + ASN details for IP: 76.234.152.222. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:51,558 - INFO - Fetched details from IPinfo for IP: 76.234.152.222
+2024-06-27 00:13:51,566 - ERROR - Error fetching Country + ASN details for IP: 76.37.26.47. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:51,703 - INFO - Fetched details from IPinfo for IP: 76.37.26.47
+2024-06-27 00:13:51,712 - ERROR - Error fetching Country + ASN details for IP: 204.14.36.70. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:51,832 - INFO - Fetched details from IPinfo for IP: 204.14.36.70
+2024-06-27 00:13:51,840 - ERROR - Error fetching Country + ASN details for IP: 96.227.101.106. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:51,997 - INFO - Fetched details from IPinfo for IP: 96.227.101.106
+2024-06-27 00:13:52,005 - ERROR - Error fetching Country + ASN details for IP: 68.132.11.116. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:52,204 - INFO - Fetched details from IPinfo for IP: 68.132.11.116
+2024-06-27 00:13:52,212 - ERROR - Error fetching Country + ASN details for IP: 172.56.186.4. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:52,344 - INFO - Fetched details from IPinfo for IP: 172.56.186.4
+2024-06-27 00:13:52,351 - ERROR - Error fetching Country + ASN details for IP: 172.56.208.82. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:52,477 - INFO - Fetched details from IPinfo for IP: 172.56.208.82
+2024-06-27 00:13:52,486 - ERROR - Error fetching Country + ASN details for IP: 8.15.177.199. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:52,607 - INFO - Fetched details from IPinfo for IP: 8.15.177.199
+2024-06-27 00:13:52,615 - ERROR - Error fetching Country + ASN details for IP: 67.191.8.106. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:52,746 - INFO - Fetched details from IPinfo for IP: 67.191.8.106
+2024-06-27 00:13:52,755 - ERROR - Error fetching Country + ASN details for IP: 104.6.133.37. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:52,905 - INFO - Fetched details from IPinfo for IP: 104.6.133.37
+2024-06-27 00:13:52,914 - ERROR - Error fetching Country + ASN details for IP: 50.90.148.98. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:53,035 - INFO - Fetched details from IPinfo for IP: 50.90.148.98
+2024-06-27 00:13:53,042 - ERROR - Error fetching Country + ASN details for IP: 73.165.25.88. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:53,176 - INFO - Fetched details from IPinfo for IP: 73.165.25.88
+2024-06-27 00:13:53,185 - ERROR - Error fetching Country + ASN details for IP: 75.232.119.52. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:53,324 - INFO - Fetched details from IPinfo for IP: 75.232.119.52
+2024-06-27 00:13:53,332 - ERROR - Error fetching Country + ASN details for IP: 108.174.185.162. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:53,445 - INFO - Fetched details from IPinfo for IP: 108.174.185.162
+2024-06-27 00:13:53,453 - ERROR - Error fetching Country + ASN details for IP: 173.22.104.154. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:53,600 - INFO - Fetched details from IPinfo for IP: 173.22.104.154
+2024-06-27 00:13:53,609 - ERROR - Error fetching Country + ASN details for IP: 47.148.86.72. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:53,724 - INFO - Fetched details from IPinfo for IP: 47.148.86.72
+2024-06-27 00:13:53,732 - ERROR - Error fetching Country + ASN details for IP: 142.214.155.139. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:53,879 - INFO - Fetched details from IPinfo for IP: 142.214.155.139
+2024-06-27 00:13:53,887 - ERROR - Error fetching Country + ASN details for IP: 73.197.236.224. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:54,005 - INFO - Fetched details from IPinfo for IP: 73.197.236.224
+2024-06-27 00:13:54,012 - ERROR - Error fetching Country + ASN details for IP: 104.174.211.112. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:54,129 - INFO - Fetched details from IPinfo for IP: 104.174.211.112
+2024-06-27 00:13:54,136 - ERROR - Error fetching Country + ASN details for IP: 138.229.235.120. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:54,267 - INFO - Fetched details from IPinfo for IP: 138.229.235.120
+2024-06-27 00:13:54,274 - ERROR - Error fetching Country + ASN details for IP: 108.165.115.135. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:54,396 - INFO - Fetched details from IPinfo for IP: 108.165.115.135
+2024-06-27 00:13:54,405 - ERROR - Error fetching Country + ASN details for IP: 142.255.126.79. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:54,552 - INFO - Fetched details from IPinfo for IP: 142.255.126.79
+2024-06-27 00:13:54,560 - ERROR - Error fetching Country + ASN details for IP: 108.41.188.44. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:54,706 - INFO - Fetched details from IPinfo for IP: 108.41.188.44
+2024-06-27 00:13:54,714 - ERROR - Error fetching Country + ASN details for IP: 76.138.47.238. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:54,860 - INFO - Fetched details from IPinfo for IP: 76.138.47.238
+2024-06-27 00:13:54,867 - ERROR - Error fetching Country + ASN details for IP: 75.191.65.74. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:54,999 - INFO - Fetched details from IPinfo for IP: 75.191.65.74
+2024-06-27 00:13:55,007 - ERROR - Error fetching Country + ASN details for IP: 73.58.11.241. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:55,122 - INFO - Fetched details from IPinfo for IP: 73.58.11.241
+2024-06-27 00:13:55,130 - ERROR - Error fetching Country + ASN details for IP: 143.55.90.250. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:55,262 - INFO - Fetched details from IPinfo for IP: 143.55.90.250
+2024-06-27 00:13:55,270 - ERROR - Error fetching Country + ASN details for IP: 45.42.141.113. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:55,406 - INFO - Fetched details from IPinfo for IP: 45.42.141.113
+2024-06-27 00:13:55,415 - ERROR - Error fetching Country + ASN details for IP: 47.150.133.174. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:55,555 - INFO - Fetched details from IPinfo for IP: 47.150.133.174
+2024-06-27 00:13:55,563 - ERROR - Error fetching Country + ASN details for IP: 50.110.243.145. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:55,710 - INFO - Fetched details from IPinfo for IP: 50.110.243.145
+2024-06-27 00:13:55,718 - ERROR - Error fetching Country + ASN details for IP: 99.32.159.24. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:55,836 - INFO - Fetched details from IPinfo for IP: 99.32.159.24
+2024-06-27 00:13:55,844 - ERROR - Error fetching Country + ASN details for IP: 172.59.97.158. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:55,992 - INFO - Fetched details from IPinfo for IP: 172.59.97.158
+2024-06-27 00:13:56,000 - ERROR - Error fetching Country + ASN details for IP: 108.237.171.107. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:56,145 - INFO - Fetched details from IPinfo for IP: 108.237.171.107
+2024-06-27 00:13:56,154 - ERROR - Error fetching Country + ASN details for IP: 135.134.227.13. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:56,268 - INFO - Fetched details from IPinfo for IP: 135.134.227.13
+2024-06-27 00:13:56,276 - ERROR - Error fetching Country + ASN details for IP: 98.216.72.38. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:56,421 - INFO - Fetched details from IPinfo for IP: 98.216.72.38
+2024-06-27 00:13:56,429 - ERROR - Error fetching Country + ASN details for IP: 100.1.57.119. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:56,577 - INFO - Fetched details from IPinfo for IP: 100.1.57.119
+2024-06-27 00:13:56,585 - ERROR - Error fetching Country + ASN details for IP: 206.217.8.23. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:56,697 - INFO - Fetched details from IPinfo for IP: 206.217.8.23
+2024-06-27 00:13:56,705 - ERROR - Error fetching Country + ASN details for IP: 99.42.123.77. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:56,823 - INFO - Fetched details from IPinfo for IP: 99.42.123.77
+2024-06-27 00:13:56,831 - ERROR - Error fetching Country + ASN details for IP: 73.12.194.148. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:56,964 - INFO - Fetched details from IPinfo for IP: 73.12.194.148
+2024-06-27 00:13:56,972 - ERROR - Error fetching Country + ASN details for IP: 35.145.42.0. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:57,123 - INFO - Fetched details from IPinfo for IP: 35.145.42.0
+2024-06-27 00:13:57,131 - ERROR - Error fetching Country + ASN details for IP: 68.107.65.248. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:57,249 - INFO - Fetched details from IPinfo for IP: 68.107.65.248
+2024-06-27 00:13:57,257 - ERROR - Error fetching Country + ASN details for IP: 108.175.188.61. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:57,420 - INFO - Fetched details from IPinfo for IP: 108.175.188.61
+2024-06-27 00:13:57,428 - ERROR - Error fetching Country + ASN details for IP: 99.56.186.54. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:57,570 - INFO - Fetched details from IPinfo for IP: 99.56.186.54
+2024-06-27 00:13:57,579 - ERROR - Error fetching Country + ASN details for IP: 72.211.148.150. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:57,711 - INFO - Fetched details from IPinfo for IP: 72.211.148.150
+2024-06-27 00:13:57,720 - ERROR - Error fetching Country + ASN details for IP: 208.66.212.229. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:57,861 - INFO - Fetched details from IPinfo for IP: 208.66.212.229
+2024-06-27 00:13:57,869 - ERROR - Error fetching Country + ASN details for IP: 76.90.125.239. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:58,023 - INFO - Fetched details from IPinfo for IP: 76.90.125.239
+2024-06-27 00:13:58,031 - ERROR - Error fetching Country + ASN details for IP: 71.209.202.3. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:58,150 - INFO - Fetched details from IPinfo for IP: 71.209.202.3
+2024-06-27 00:13:58,158 - ERROR - Error fetching Country + ASN details for IP: 82.86.70.135. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:58,285 - INFO - Fetched details from IPinfo for IP: 82.86.70.135
+2024-06-27 00:13:58,294 - ERROR - Error fetching Country + ASN details for IP: 71.76.37.248. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:58,432 - INFO - Fetched details from IPinfo for IP: 71.76.37.248
+2024-06-27 00:13:58,440 - ERROR - Error fetching Country + ASN details for IP: 108.6.112.204. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:58,566 - INFO - Fetched details from IPinfo for IP: 108.6.112.204
+2024-06-27 00:13:58,574 - ERROR - Error fetching Country + ASN details for IP: 71.245.161.137. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:58,692 - INFO - Fetched details from IPinfo for IP: 71.245.161.137
+2024-06-27 00:13:58,701 - ERROR - Error fetching Country + ASN details for IP: 172.59.187.175. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:58,819 - INFO - Fetched details from IPinfo for IP: 172.59.187.175
+2024-06-27 00:13:58,827 - ERROR - Error fetching Country + ASN details for IP: 35.148.187.231. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:58,993 - INFO - Fetched details from IPinfo for IP: 35.148.187.231
+2024-06-27 00:13:59,000 - ERROR - Error fetching Country + ASN details for IP: 73.134.227.22. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:59,127 - INFO - Fetched details from IPinfo for IP: 73.134.227.22
+2024-06-27 00:13:59,135 - ERROR - Error fetching Country + ASN details for IP: 73.104.233.59. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:59,283 - INFO - Fetched details from IPinfo for IP: 73.104.233.59
+2024-06-27 00:13:59,291 - ERROR - Error fetching Country + ASN details for IP: 75.44.151.81. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:59,464 - INFO - Fetched details from IPinfo for IP: 75.44.151.81
+2024-06-27 00:13:59,471 - ERROR - Error fetching Country + ASN details for IP: 71.71.135.85. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:59,596 - INFO - Fetched details from IPinfo for IP: 71.71.135.85
+2024-06-27 00:13:59,604 - ERROR - Error fetching Country + ASN details for IP: 184.97.151.29. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:59,764 - INFO - Fetched details from IPinfo for IP: 184.97.151.29
+2024-06-27 00:13:59,771 - ERROR - Error fetching Country + ASN details for IP: 76.116.93.98. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:13:59,890 - INFO - Fetched details from IPinfo for IP: 76.116.93.98
+2024-06-27 00:13:59,898 - ERROR - Error fetching Country + ASN details for IP: 76.35.77.111. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:00,025 - INFO - Fetched details from IPinfo for IP: 76.35.77.111
+2024-06-27 00:14:00,033 - ERROR - Error fetching Country + ASN details for IP: 67.252.72.100. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:00,154 - INFO - Fetched details from IPinfo for IP: 67.252.72.100
+2024-06-27 00:14:00,162 - ERROR - Error fetching Country + ASN details for IP: 100.1.116.62. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:00,313 - INFO - Fetched details from IPinfo for IP: 100.1.116.62
+2024-06-27 00:14:00,323 - ERROR - Error fetching Country + ASN details for IP: 47.16.187.188. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:00,437 - INFO - Fetched details from IPinfo for IP: 47.16.187.188
+2024-06-27 00:14:00,445 - ERROR - Error fetching Country + ASN details for IP: 73.49.31.252. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:00,576 - INFO - Fetched details from IPinfo for IP: 73.49.31.252
+2024-06-27 00:14:00,584 - ERROR - Error fetching Country + ASN details for IP: 76.235.245.164. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:00,697 - INFO - Fetched details from IPinfo for IP: 76.235.245.164
+2024-06-27 00:14:00,705 - ERROR - Error fetching Country + ASN details for IP: 73.139.199.144. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:00,829 - INFO - Fetched details from IPinfo for IP: 73.139.199.144
+2024-06-27 00:14:00,838 - ERROR - Error fetching Country + ASN details for IP: 73.216.101.203. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:00,994 - INFO - Fetched details from IPinfo for IP: 73.216.101.203
+2024-06-27 00:14:01,002 - ERROR - Error fetching Country + ASN details for IP: 24.183.244.183. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:01,137 - INFO - Fetched details from IPinfo for IP: 24.183.244.183
+2024-06-27 00:14:01,145 - ERROR - Error fetching Country + ASN details for IP: 68.66.29.238. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:01,266 - INFO - Fetched details from IPinfo for IP: 68.66.29.238
+2024-06-27 00:14:01,274 - ERROR - Error fetching Country + ASN details for IP: 24.158.120.230. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:01,404 - INFO - Fetched details from IPinfo for IP: 24.158.120.230
+2024-06-27 00:14:01,412 - ERROR - Error fetching Country + ASN details for IP: 76.35.3.115. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:01,525 - INFO - Fetched details from IPinfo for IP: 76.35.3.115
+2024-06-27 00:14:01,533 - ERROR - Error fetching Country + ASN details for IP: 68.202.231.164. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:01,644 - INFO - Fetched details from IPinfo for IP: 68.202.231.164
+2024-06-27 00:14:01,652 - ERROR - Error fetching Country + ASN details for IP: 35.134.203.19. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:01,786 - INFO - Fetched details from IPinfo for IP: 35.134.203.19
+2024-06-27 00:14:01,793 - ERROR - Error fetching Country + ASN details for IP: 45.24.12.225. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:01,953 - INFO - Fetched details from IPinfo for IP: 45.24.12.225
+2024-06-27 00:14:01,968 - ERROR - Error fetching Country + ASN details for IP: 144.163.66.15. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:02,105 - INFO - Fetched details from IPinfo for IP: 144.163.66.15
+2024-06-27 00:14:02,114 - ERROR - Error fetching Country + ASN details for IP: 70.177.144.139. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:02,268 - INFO - Fetched details from IPinfo for IP: 70.177.144.139
+2024-06-27 00:14:02,277 - ERROR - Error fetching Country + ASN details for IP: 24.34.234.139. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:02,429 - INFO - Fetched details from IPinfo for IP: 24.34.234.139
+2024-06-27 00:14:02,437 - ERROR - Error fetching Country + ASN details for IP: 24.41.101.90. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:02,547 - INFO - Fetched details from IPinfo for IP: 24.41.101.90
+2024-06-27 00:14:02,555 - ERROR - Error fetching Country + ASN details for IP: 192.24.102.225. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:02,691 - INFO - Fetched details from IPinfo for IP: 192.24.102.225
+2024-06-27 00:14:02,699 - ERROR - Error fetching Country + ASN details for IP: 47.198.113.18. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:02,838 - INFO - Fetched details from IPinfo for IP: 47.198.113.18
+2024-06-27 00:14:02,846 - ERROR - Error fetching Country + ASN details for IP: 45.46.81.235. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:02,966 - INFO - Fetched details from IPinfo for IP: 45.46.81.235
+2024-06-27 00:14:02,974 - ERROR - Error fetching Country + ASN details for IP: 47.199.221.23. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:03,090 - INFO - Fetched details from IPinfo for IP: 47.199.221.23
+2024-06-27 00:14:03,098 - ERROR - Error fetching Country + ASN details for IP: 174.61.102.126. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:03,232 - INFO - Fetched details from IPinfo for IP: 174.61.102.126
+2024-06-27 00:14:03,241 - ERROR - Error fetching Country + ASN details for IP: 172.118.100.165. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:03,394 - INFO - Fetched details from IPinfo for IP: 172.118.100.165
+2024-06-27 00:14:03,403 - ERROR - Error fetching Country + ASN details for IP: 99.137.150.9. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:03,536 - INFO - Fetched details from IPinfo for IP: 99.137.150.9
+2024-06-27 00:14:03,544 - ERROR - Error fetching Country + ASN details for IP: 70.126.16.230. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:03,692 - INFO - Fetched details from IPinfo for IP: 70.126.16.230
+2024-06-27 00:14:03,700 - ERROR - Error fetching Country + ASN details for IP: 73.235.175.103. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:03,820 - INFO - Fetched details from IPinfo for IP: 73.235.175.103
+2024-06-27 00:14:03,830 - ERROR - Error fetching Country + ASN details for IP: 24.28.99.245. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:03,961 - INFO - Fetched details from IPinfo for IP: 24.28.99.245
+2024-06-27 00:14:03,968 - ERROR - Error fetching Country + ASN details for IP: 68.118.250.207. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:04,084 - INFO - Fetched details from IPinfo for IP: 68.118.250.207
+2024-06-27 00:14:04,091 - ERROR - Error fetching Country + ASN details for IP: 69.138.164.237. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:04,201 - INFO - Fetched details from IPinfo for IP: 69.138.164.237
+2024-06-27 00:14:04,209 - ERROR - Error fetching Country + ASN details for IP: 98.237.123.231. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:04,352 - INFO - Fetched details from IPinfo for IP: 98.237.123.231
+2024-06-27 00:14:04,358 - ERROR - Error fetching Country + ASN details for IP: 98.252.189.7. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:14:04,485 - INFO - Fetched details from IPinfo for IP: 98.252.189.7
+2024-06-27 00:15:02,939 - INFO - Logging initialized.
+2024-06-27 00:15:02,941 - INFO - Data source: IPinfo (https://ipinfo.io)
+2024-06-27 00:15:02,941 - INFO - Country + ASN database already exists.
+2024-06-27 00:15:07,521 - ERROR - Error fetching Country + ASN details for IP: 71.73.84.23. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:07,737 - INFO - Fetched details from IPinfo for IP: 71.73.84.23
+2024-06-27 00:15:07,746 - ERROR - Error fetching Country + ASN details for IP: 73.253.185.148. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:07,867 - INFO - Fetched details from IPinfo for IP: 73.253.185.148
+2024-06-27 00:15:07,875 - ERROR - Error fetching Country + ASN details for IP: 174.168.51.95. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:07,992 - INFO - Fetched details from IPinfo for IP: 174.168.51.95
+2024-06-27 00:15:07,999 - ERROR - Error fetching Country + ASN details for IP: 69.253.185.201. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:08,110 - INFO - Fetched details from IPinfo for IP: 69.253.185.201
+2024-06-27 00:15:08,118 - ERROR - Error fetching Country + ASN details for IP: 24.113.83.136. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:08,236 - INFO - Fetched details from IPinfo for IP: 24.113.83.136
+2024-06-27 00:15:08,244 - ERROR - Error fetching Country + ASN details for IP: 174.73.206.191. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:08,374 - INFO - Fetched details from IPinfo for IP: 174.73.206.191
+2024-06-27 00:15:08,382 - ERROR - Error fetching Country + ASN details for IP: 174.64.78.79. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:08,529 - INFO - Fetched details from IPinfo for IP: 174.64.78.79
+2024-06-27 00:15:08,537 - ERROR - Error fetching Country + ASN details for IP: 73.254.120.229. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:08,665 - INFO - Fetched details from IPinfo for IP: 73.254.120.229
+2024-06-27 00:15:08,673 - ERROR - Error fetching Country + ASN details for IP: 173.70.230.49. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:08,825 - INFO - Fetched details from IPinfo for IP: 173.70.230.49
+2024-06-27 00:15:08,834 - ERROR - Error fetching Country + ASN details for IP: 207.228.39.253. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:08,968 - INFO - Fetched details from IPinfo for IP: 207.228.39.253
+2024-06-27 00:15:08,976 - ERROR - Error fetching Country + ASN details for IP: 35.145.102.104. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:09,107 - INFO - Fetched details from IPinfo for IP: 35.145.102.104
+2024-06-27 00:15:09,115 - ERROR - Error fetching Country + ASN details for IP: 24.243.243.153. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:09,248 - INFO - Fetched details from IPinfo for IP: 24.243.243.153
+2024-06-27 00:15:09,255 - ERROR - Error fetching Country + ASN details for IP: 172.58.209.20. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:09,399 - INFO - Fetched details from IPinfo for IP: 172.58.209.20
+2024-06-27 00:15:09,407 - ERROR - Error fetching Country + ASN details for IP: 172.58.131.246. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:09,532 - INFO - Fetched details from IPinfo for IP: 172.58.131.246
+2024-06-27 00:15:09,540 - ERROR - Error fetching Country + ASN details for IP: 131.93.150.196. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:09,665 - INFO - Fetched details from IPinfo for IP: 131.93.150.196
+2024-06-27 00:15:09,673 - ERROR - Error fetching Country + ASN details for IP: 76.234.152.222. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:09,794 - INFO - Fetched details from IPinfo for IP: 76.234.152.222
+2024-06-27 00:15:09,801 - ERROR - Error fetching Country + ASN details for IP: 76.37.26.47. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:09,919 - INFO - Fetched details from IPinfo for IP: 76.37.26.47
+2024-06-27 00:15:09,927 - ERROR - Error fetching Country + ASN details for IP: 204.14.36.70. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:10,060 - INFO - Fetched details from IPinfo for IP: 204.14.36.70
+2024-06-27 00:15:10,067 - ERROR - Error fetching Country + ASN details for IP: 96.227.101.106. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:10,206 - INFO - Fetched details from IPinfo for IP: 96.227.101.106
+2024-06-27 00:15:10,213 - ERROR - Error fetching Country + ASN details for IP: 68.132.11.116. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:10,348 - INFO - Fetched details from IPinfo for IP: 68.132.11.116
+2024-06-27 00:15:10,356 - ERROR - Error fetching Country + ASN details for IP: 172.56.186.4. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:10,477 - INFO - Fetched details from IPinfo for IP: 172.56.186.4
+2024-06-27 00:15:10,485 - ERROR - Error fetching Country + ASN details for IP: 172.56.208.82. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:10,629 - INFO - Fetched details from IPinfo for IP: 172.56.208.82
+2024-06-27 00:15:10,638 - ERROR - Error fetching Country + ASN details for IP: 8.15.177.199. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:10,773 - INFO - Fetched details from IPinfo for IP: 8.15.177.199
+2024-06-27 00:15:10,782 - ERROR - Error fetching Country + ASN details for IP: 67.191.8.106. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:10,921 - INFO - Fetched details from IPinfo for IP: 67.191.8.106
+2024-06-27 00:15:10,929 - ERROR - Error fetching Country + ASN details for IP: 104.6.133.37. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:11,063 - INFO - Fetched details from IPinfo for IP: 104.6.133.37
+2024-06-27 00:15:11,071 - ERROR - Error fetching Country + ASN details for IP: 50.90.148.98. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:11,210 - INFO - Fetched details from IPinfo for IP: 50.90.148.98
+2024-06-27 00:15:11,218 - ERROR - Error fetching Country + ASN details for IP: 73.165.25.88. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:11,339 - INFO - Fetched details from IPinfo for IP: 73.165.25.88
+2024-06-27 00:15:11,346 - ERROR - Error fetching Country + ASN details for IP: 75.232.119.52. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:11,500 - INFO - Fetched details from IPinfo for IP: 75.232.119.52
+2024-06-27 00:15:11,509 - ERROR - Error fetching Country + ASN details for IP: 108.174.185.162. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:11,644 - INFO - Fetched details from IPinfo for IP: 108.174.185.162
+2024-06-27 00:15:11,651 - ERROR - Error fetching Country + ASN details for IP: 173.22.104.154. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:11,759 - INFO - Fetched details from IPinfo for IP: 173.22.104.154
+2024-06-27 00:15:11,767 - ERROR - Error fetching Country + ASN details for IP: 47.148.86.72. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:11,906 - INFO - Fetched details from IPinfo for IP: 47.148.86.72
+2024-06-27 00:15:11,914 - ERROR - Error fetching Country + ASN details for IP: 142.214.155.139. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:12,055 - INFO - Fetched details from IPinfo for IP: 142.214.155.139
+2024-06-27 00:15:12,064 - ERROR - Error fetching Country + ASN details for IP: 73.197.236.224. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:12,186 - INFO - Fetched details from IPinfo for IP: 73.197.236.224
+2024-06-27 00:15:12,194 - ERROR - Error fetching Country + ASN details for IP: 104.174.211.112. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:12,332 - INFO - Fetched details from IPinfo for IP: 104.174.211.112
+2024-06-27 00:15:12,340 - ERROR - Error fetching Country + ASN details for IP: 138.229.235.120. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:12,479 - INFO - Fetched details from IPinfo for IP: 138.229.235.120
+2024-06-27 00:15:12,486 - ERROR - Error fetching Country + ASN details for IP: 108.165.115.135. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:12,640 - INFO - Fetched details from IPinfo for IP: 108.165.115.135
+2024-06-27 00:15:12,649 - ERROR - Error fetching Country + ASN details for IP: 142.255.126.79. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:12,771 - INFO - Fetched details from IPinfo for IP: 142.255.126.79
+2024-06-27 00:15:12,779 - ERROR - Error fetching Country + ASN details for IP: 108.41.188.44. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:12,921 - INFO - Fetched details from IPinfo for IP: 108.41.188.44
+2024-06-27 00:15:12,929 - ERROR - Error fetching Country + ASN details for IP: 76.138.47.238. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:13,077 - INFO - Fetched details from IPinfo for IP: 76.138.47.238
+2024-06-27 00:15:13,085 - ERROR - Error fetching Country + ASN details for IP: 75.191.65.74. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:13,209 - INFO - Fetched details from IPinfo for IP: 75.191.65.74
+2024-06-27 00:15:13,217 - ERROR - Error fetching Country + ASN details for IP: 73.58.11.241. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:13,352 - INFO - Fetched details from IPinfo for IP: 73.58.11.241
+2024-06-27 00:15:13,360 - ERROR - Error fetching Country + ASN details for IP: 143.55.90.250. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:13,480 - INFO - Fetched details from IPinfo for IP: 143.55.90.250
+2024-06-27 00:15:13,488 - ERROR - Error fetching Country + ASN details for IP: 45.42.141.113. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:13,611 - INFO - Fetched details from IPinfo for IP: 45.42.141.113
+2024-06-27 00:15:13,619 - ERROR - Error fetching Country + ASN details for IP: 47.150.133.174. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:13,737 - INFO - Fetched details from IPinfo for IP: 47.150.133.174
+2024-06-27 00:15:13,746 - ERROR - Error fetching Country + ASN details for IP: 50.110.243.145. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:13,870 - INFO - Fetched details from IPinfo for IP: 50.110.243.145
+2024-06-27 00:15:13,878 - ERROR - Error fetching Country + ASN details for IP: 99.32.159.24. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:14,020 - INFO - Fetched details from IPinfo for IP: 99.32.159.24
+2024-06-27 00:15:14,028 - ERROR - Error fetching Country + ASN details for IP: 172.59.97.158. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:14,147 - INFO - Fetched details from IPinfo for IP: 172.59.97.158
+2024-06-27 00:15:14,155 - ERROR - Error fetching Country + ASN details for IP: 108.237.171.107. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:14,294 - INFO - Fetched details from IPinfo for IP: 108.237.171.107
+2024-06-27 00:15:14,302 - ERROR - Error fetching Country + ASN details for IP: 135.134.227.13. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:14,425 - INFO - Fetched details from IPinfo for IP: 135.134.227.13
+2024-06-27 00:15:14,433 - ERROR - Error fetching Country + ASN details for IP: 98.216.72.38. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:14,572 - INFO - Fetched details from IPinfo for IP: 98.216.72.38
+2024-06-27 00:15:14,580 - ERROR - Error fetching Country + ASN details for IP: 100.1.57.119. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:14,701 - INFO - Fetched details from IPinfo for IP: 100.1.57.119
+2024-06-27 00:15:14,709 - ERROR - Error fetching Country + ASN details for IP: 206.217.8.23. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:14,852 - INFO - Fetched details from IPinfo for IP: 206.217.8.23
+2024-06-27 00:15:14,861 - ERROR - Error fetching Country + ASN details for IP: 99.42.123.77. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:15,001 - INFO - Fetched details from IPinfo for IP: 99.42.123.77
+2024-06-27 00:15:15,009 - ERROR - Error fetching Country + ASN details for IP: 73.12.194.148. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:15,167 - INFO - Fetched details from IPinfo for IP: 73.12.194.148
+2024-06-27 00:15:15,175 - ERROR - Error fetching Country + ASN details for IP: 35.145.42.0. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:15,295 - INFO - Fetched details from IPinfo for IP: 35.145.42.0
+2024-06-27 00:15:15,304 - ERROR - Error fetching Country + ASN details for IP: 68.107.65.248. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:15,419 - INFO - Fetched details from IPinfo for IP: 68.107.65.248
+2024-06-27 00:15:15,427 - ERROR - Error fetching Country + ASN details for IP: 108.175.188.61. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:15,545 - INFO - Fetched details from IPinfo for IP: 108.175.188.61
+2024-06-27 00:15:15,553 - ERROR - Error fetching Country + ASN details for IP: 99.56.186.54. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:15,695 - INFO - Fetched details from IPinfo for IP: 99.56.186.54
+2024-06-27 00:15:15,703 - ERROR - Error fetching Country + ASN details for IP: 72.211.148.150. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:15,823 - INFO - Fetched details from IPinfo for IP: 72.211.148.150
+2024-06-27 00:15:15,831 - ERROR - Error fetching Country + ASN details for IP: 208.66.212.229. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:15,999 - INFO - Fetched details from IPinfo for IP: 208.66.212.229
+2024-06-27 00:15:16,008 - ERROR - Error fetching Country + ASN details for IP: 76.90.125.239. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:16,170 - INFO - Fetched details from IPinfo for IP: 76.90.125.239
+2024-06-27 00:15:16,178 - ERROR - Error fetching Country + ASN details for IP: 71.209.202.3. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:16,327 - INFO - Fetched details from IPinfo for IP: 71.209.202.3
+2024-06-27 00:15:16,335 - ERROR - Error fetching Country + ASN details for IP: 82.86.70.135. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:16,492 - INFO - Fetched details from IPinfo for IP: 82.86.70.135
+2024-06-27 00:15:16,500 - ERROR - Error fetching Country + ASN details for IP: 71.76.37.248. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:16,618 - INFO - Fetched details from IPinfo for IP: 71.76.37.248
+2024-06-27 00:15:16,626 - ERROR - Error fetching Country + ASN details for IP: 108.6.112.204. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:16,755 - INFO - Fetched details from IPinfo for IP: 108.6.112.204
+2024-06-27 00:15:16,764 - ERROR - Error fetching Country + ASN details for IP: 71.245.161.137. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:16,920 - INFO - Fetched details from IPinfo for IP: 71.245.161.137
+2024-06-27 00:15:16,928 - ERROR - Error fetching Country + ASN details for IP: 172.59.187.175. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:17,062 - INFO - Fetched details from IPinfo for IP: 172.59.187.175
+2024-06-27 00:15:17,070 - ERROR - Error fetching Country + ASN details for IP: 35.148.187.231. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:17,222 - INFO - Fetched details from IPinfo for IP: 35.148.187.231
+2024-06-27 00:15:17,231 - ERROR - Error fetching Country + ASN details for IP: 73.134.227.22. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:17,349 - INFO - Fetched details from IPinfo for IP: 73.134.227.22
+2024-06-27 00:15:17,357 - ERROR - Error fetching Country + ASN details for IP: 73.104.233.59. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:17,526 - INFO - Fetched details from IPinfo for IP: 73.104.233.59
+2024-06-27 00:15:17,535 - ERROR - Error fetching Country + ASN details for IP: 75.44.151.81. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:17,664 - INFO - Fetched details from IPinfo for IP: 75.44.151.81
+2024-06-27 00:15:17,672 - ERROR - Error fetching Country + ASN details for IP: 71.71.135.85. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:17,830 - INFO - Fetched details from IPinfo for IP: 71.71.135.85
+2024-06-27 00:15:17,839 - ERROR - Error fetching Country + ASN details for IP: 184.97.151.29. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:17,960 - INFO - Fetched details from IPinfo for IP: 184.97.151.29
+2024-06-27 00:15:17,969 - ERROR - Error fetching Country + ASN details for IP: 76.116.93.98. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:18,124 - INFO - Fetched details from IPinfo for IP: 76.116.93.98
+2024-06-27 00:15:18,133 - ERROR - Error fetching Country + ASN details for IP: 76.35.77.111. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:18,266 - INFO - Fetched details from IPinfo for IP: 76.35.77.111
+2024-06-27 00:15:18,275 - ERROR - Error fetching Country + ASN details for IP: 67.252.72.100. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:18,429 - INFO - Fetched details from IPinfo for IP: 67.252.72.100
+2024-06-27 00:15:18,438 - ERROR - Error fetching Country + ASN details for IP: 100.1.116.62. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:18,560 - INFO - Fetched details from IPinfo for IP: 100.1.116.62
+2024-06-27 00:15:18,569 - ERROR - Error fetching Country + ASN details for IP: 47.16.187.188. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:18,726 - INFO - Fetched details from IPinfo for IP: 47.16.187.188
+2024-06-27 00:15:18,735 - ERROR - Error fetching Country + ASN details for IP: 73.49.31.252. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:18,854 - INFO - Fetched details from IPinfo for IP: 73.49.31.252
+2024-06-27 00:15:18,863 - ERROR - Error fetching Country + ASN details for IP: 76.235.245.164. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:18,996 - INFO - Fetched details from IPinfo for IP: 76.235.245.164
+2024-06-27 00:15:19,005 - ERROR - Error fetching Country + ASN details for IP: 73.139.199.144. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:19,129 - INFO - Fetched details from IPinfo for IP: 73.139.199.144
+2024-06-27 00:15:19,138 - ERROR - Error fetching Country + ASN details for IP: 73.216.101.203. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:19,258 - INFO - Fetched details from IPinfo for IP: 73.216.101.203
+2024-06-27 00:15:19,267 - ERROR - Error fetching Country + ASN details for IP: 24.183.244.183. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:19,389 - INFO - Fetched details from IPinfo for IP: 24.183.244.183
+2024-06-27 00:15:19,398 - ERROR - Error fetching Country + ASN details for IP: 68.66.29.238. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:19,530 - INFO - Fetched details from IPinfo for IP: 68.66.29.238
+2024-06-27 00:15:19,538 - ERROR - Error fetching Country + ASN details for IP: 24.158.120.230. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:19,865 - INFO - Fetched details from IPinfo for IP: 24.158.120.230
+2024-06-27 00:15:19,874 - ERROR - Error fetching Country + ASN details for IP: 76.35.3.115. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:20,436 - INFO - Fetched details from IPinfo for IP: 76.35.3.115
+2024-06-27 00:15:20,453 - ERROR - Error fetching Country + ASN details for IP: 68.202.231.164. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:20,797 - INFO - Fetched details from IPinfo for IP: 68.202.231.164
+2024-06-27 00:15:20,805 - ERROR - Error fetching Country + ASN details for IP: 35.134.203.19. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:21,165 - INFO - Fetched details from IPinfo for IP: 35.134.203.19
+2024-06-27 00:15:21,174 - ERROR - Error fetching Country + ASN details for IP: 45.24.12.225. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:21,528 - INFO - Fetched details from IPinfo for IP: 45.24.12.225
+2024-06-27 00:15:21,536 - ERROR - Error fetching Country + ASN details for IP: 144.163.66.15. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:21,930 - INFO - Fetched details from IPinfo for IP: 144.163.66.15
+2024-06-27 00:15:21,939 - ERROR - Error fetching Country + ASN details for IP: 70.177.144.139. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:22,434 - INFO - Fetched details from IPinfo for IP: 70.177.144.139
+2024-06-27 00:15:22,442 - ERROR - Error fetching Country + ASN details for IP: 24.34.234.139. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:22,796 - INFO - Fetched details from IPinfo for IP: 24.34.234.139
+2024-06-27 00:15:22,804 - ERROR - Error fetching Country + ASN details for IP: 24.41.101.90. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:23,168 - INFO - Fetched details from IPinfo for IP: 24.41.101.90
+2024-06-27 00:15:23,176 - ERROR - Error fetching Country + ASN details for IP: 192.24.102.225. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:23,518 - INFO - Fetched details from IPinfo for IP: 192.24.102.225
+2024-06-27 00:15:23,526 - ERROR - Error fetching Country + ASN details for IP: 47.198.113.18. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:23,796 - INFO - Fetched details from IPinfo for IP: 47.198.113.18
+2024-06-27 00:15:23,804 - ERROR - Error fetching Country + ASN details for IP: 45.46.81.235. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:23,944 - INFO - Fetched details from IPinfo for IP: 45.46.81.235
+2024-06-27 00:15:23,952 - ERROR - Error fetching Country + ASN details for IP: 47.199.221.23. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:24,083 - INFO - Fetched details from IPinfo for IP: 47.199.221.23
+2024-06-27 00:15:24,091 - ERROR - Error fetching Country + ASN details for IP: 174.61.102.126. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:24,206 - INFO - Fetched details from IPinfo for IP: 174.61.102.126
+2024-06-27 00:15:24,215 - ERROR - Error fetching Country + ASN details for IP: 172.118.100.165. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:24,349 - INFO - Fetched details from IPinfo for IP: 172.118.100.165
+2024-06-27 00:15:24,357 - ERROR - Error fetching Country + ASN details for IP: 99.137.150.9. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:24,502 - INFO - Fetched details from IPinfo for IP: 99.137.150.9
+2024-06-27 00:15:24,510 - ERROR - Error fetching Country + ASN details for IP: 70.126.16.230. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:24,629 - INFO - Fetched details from IPinfo for IP: 70.126.16.230
+2024-06-27 00:15:24,638 - ERROR - Error fetching Country + ASN details for IP: 73.235.175.103. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:24,782 - INFO - Fetched details from IPinfo for IP: 73.235.175.103
+2024-06-27 00:15:24,797 - ERROR - Error fetching Country + ASN details for IP: 24.28.99.245. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:24,915 - INFO - Fetched details from IPinfo for IP: 24.28.99.245
+2024-06-27 00:15:24,923 - ERROR - Error fetching Country + ASN details for IP: 68.118.250.207. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:25,064 - INFO - Fetched details from IPinfo for IP: 68.118.250.207
+2024-06-27 00:15:25,072 - ERROR - Error fetching Country + ASN details for IP: 69.138.164.237. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:25,193 - INFO - Fetched details from IPinfo for IP: 69.138.164.237
+2024-06-27 00:15:25,202 - ERROR - Error fetching Country + ASN details for IP: 98.237.123.231. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:25,339 - INFO - Fetched details from IPinfo for IP: 98.237.123.231
+2024-06-27 00:15:25,347 - ERROR - Error fetching Country + ASN details for IP: 98.252.189.7. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-27 00:15:25,469 - INFO - Fetched details from IPinfo for IP: 98.252.189.7
+2024-06-27 00:15:39,297 - INFO - Results saved to /Users/geoffplymale/Desktop/test.csv
