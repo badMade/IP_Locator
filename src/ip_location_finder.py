@@ -4,6 +4,8 @@ import geoip2.database
 import logging
 import subprocess
 import json
+import tkinter as tk
+from tkinter import messagebox, filedialog
 
 # API Keys and Database URLs
 API_KEYS = {
@@ -212,73 +214,141 @@ def filter_multiple_countries(input_csv, countries_file, output_csv):
         logging.error(f"Failed to filter multiple countries data from {input_csv}. Error: {e}")
 
 def display_ipinfo_data(data):
+    result = ""
     if 'ip' in data:
-        print(f"IP: {data['ip']}")
+        result += f"IP: {data['ip']}\n"
     if 'hostname' in data:
-        print(f"Hostname: {data['hostname']}")
+        result += f"Hostname: {data['hostname']}\n"
     if 'city' in data:
-        print(f"City: {data['city']}")
+        result += f"City: {data['city']}\n"
     if 'region' in data:
-        print(f"Region: {data['region']}")
+        result += f"Region: {data['region']}\n"
     if 'country' in data:
-        print(f"Country: {data['country']}")
+        result += f"Country: {data['country']}\n"
     if 'loc' in data:
-        print(f"Location: {data['loc']}")
+        result += f"Location: {data['loc']}\n"
     if 'org' in data:
-        print(f"Organization: {data['org']}")
+        result += f"Organization: {data['org']}\n"
     if 'postal' in data:
-        print(f"Postal Code: {data['postal']}")
+        result += f"Postal Code: {data['postal']}\n"
     if 'timezone' in data:
-        print(f"Timezone: {data['timezone']}")
+        result += f"Timezone: {data['timezone']}\n"
     if 'asn' in data:
-        print(f"ASN: {data['asn']['asn']}")
-        print(f"ASN Name: {data['asn']['name']}")
-        print(f"ASN Domain: {data['asn']['domain']}")
-        print(f"ASN Route: {data['asn']['route']}")
-        print(f"ASN Type: {data['asn']['type']}")
+        result += f"ASN: {data['asn']['asn']}\n"
+        result += f"ASN Name: {data['asn']['name']}\n"
+        result += f"ASN Domain: {data['asn']['domain']}\n"
+        result += f"ASN Route: {data['asn']['route']}\n"
+        result += f"ASN Type: {data['asn']['type']}\n"
     if 'privacy' in data:
-        print(f"VPN: {data['privacy']['vpn']}")
-        print(f"Proxy: {data['privacy']['proxy']}")
-        print(f"Tor: {data['privacy']['tor']}")
-        print(f"Relay: {data['privacy']['relay']}")
-        print(f"Hosting: {data['privacy']['hosting']}")
+        result += f"VPN: {data['privacy']['vpn']}\n"
+        result += f"Proxy: {data['privacy']['proxy']}\n"
+        result += f"Tor: {data['privacy']['tor']}\n"
+        result += f"Relay: {data['privacy']['relay']}\n"
+        result += f"Hosting: {data['privacy']['hosting']}\n"
     if 'carrier' in data:
-        print(f"Carrier Name: {data['carrier']['name']}")
-        print(f"Carrier MCC: {data['carrier']['mcc']}")
-        print(f"Carrier MNC: {data['carrier']['mnc']}")
+        result += f"Carrier Name: {data['carrier']['name']}\n"
+        result += f"Carrier MCC: {data['carrier']['mcc']}\n"
+        result += f"Carrier MNC: {data['carrier']['mnc']}\n"
     if 'company' in data:
-        print(f"Company Name: {data['company']['name']}")
-        print(f"Company Domain: {data['company']['domain']}")
-        print(f"Company Type: {data['company']['type']}")
+        result += f"Company Name: {data['company']['name']}\n"
+        result += f"Company Domain: {data['company']['domain']}\n"
+        result += f"Company Type: {data['company']['type']}\n"
     if 'domains' in data:
-        print(f"Total Domains: {data['domains']['total']}")
-        print("Domains: ", ", ".join(data['domains']['domains'][:5]))  # Display only first 5 domains
+        result += f"Total Domains: {data['domains']['total']}\n"
+        result += "Domains: " + ", ".join(data['domains']['domains'][:5]) + "\n"  # Display only first 5 domains
     if 'abuse' in data:
-        print(f"Abuse Contact Name: {data['abuse']['name']}")
-        print(f"Abuse Contact Network: {data['abuse']['network']}")
-        print(f"Abuse Contact Email: {data['abuse']['email']}")
-        print(f"Abuse Contact Phone: {data['abuse']['phone']}")
-        print(f"Abuse Contact Address: {data['abuse']['address']}")
+        result += f"Abuse Contact Name: {data['abuse']['name']}\n"
+        result += f"Abuse Contact Network: {data['abuse']['network']}\n"
+        result += f"Abuse Contact Email: {data['abuse']['email']}\n"
+        result += f"Abuse Contact Phone: {data['abuse']['phone']}\n"
+        result += f"Abuse Contact Address: {data['abuse']['address']}\n"
     if 'bogon' in data:
-        print(f"Bogon: {data['bogon']}")
+        result += f"Bogon: {data['bogon']}\n"
     if 'anycast' in data:
-        print(f"Anycast: {data['anycast']}")
+        result += f"Anycast: {data['anycast']}\n"
+    return result
 
 def display_asn_data(data):
-    print(f"ASN: {data['asn']}")
-    print(f"Name: {data['name']}")
-    print(f"Country: {data['country']}")
-    print(f"Allocated: {data['allocated']}")
-    print(f"Registry: {data['registry']}")
-    print(f"Domain: {data['domain']}")
-    print(f"Number of IPs: {data['num_ips']}")
-    print(f"Type: {data['type']}")
-    print("Prefixes:")
+    result = f"ASN: {data['asn']}\n"
+    result += f"Name: {data['name']}\n"
+    result += f"Country: {data['country']}\n"
+    result += f"Allocated: {data['allocated']}\n"
+    result += f"Registry: {data['registry']}\n"
+    result += f"Domain: {data['domain']}\n"
+    result += f"Number of IPs: {data['num_ips']}\n"
+    result += f"Type: {data['type']}\n"
+    result += "Prefixes:\n"
     for prefix in data['prefixes']:
-        print(f"  Netblock: {prefix['netblock']}, ID: {prefix['id']}, Name: {prefix['name']}, Country: {prefix['country']}")
-    print("IPv6 Prefixes:")
+        result += f"  Netblock: {prefix['netblock']}, ID: {prefix['id']}, Name: {prefix['name']}, Country: {prefix['country']}\n"
+    result += "IPv6 Prefixes:\n"
     for prefix6 in data['prefixes6']:
-        print(f"  Netblock: {prefix6['netblock']}, ID: {prefix6['id']}, Name: {prefix6['name']}, Country: {prefix6['country']}")
+        result += f"  Netblock: {prefix6['netblock']}, ID: {prefix6['id']}, Name: {prefix6['name']}, Country: {prefix6['country']}\n"
+    return result
+
+def perform_ip_lookup(ip_address):
+    country_asn_data = fetch_country_asn_details(ip_address)
+    
+    # Try IPinfo first
+    data = fetch_ipinfo_details(ip_address)
+    if not data:  # Fallback to IPStack if IPinfo fails
+        data = fetch_ipstack_details(ip_address)
+    
+    if data:
+        if country_asn_data:
+            data.update(country_asn_data)
+        return display_ipinfo_data(data)
+    else:
+        return "Failed to retrieve IP information from all sources."
+
+def perform_asn_lookup(asn):
+    data = fetch_asn_details(asn)
+    if data:
+        return display_asn_data(data)
+    else:
+        return f"Failed to retrieve details for ASN: {asn}"
+
+class IPFinderApp(tk.Tk):
+    def __init__(self):
+        super().__init__()
+        self.title("IP Location Finder")
+        self.geometry("600x400")
+        
+        self.create_widgets()
+        
+    def create_widgets(self):
+        self.label = tk.Label(self, text="Enter 1 for IP lookup, 2 for ASN lookup:")
+        self.label.pack(pady=10)
+        
+        self.option_var = tk.StringVar()
+        self.option_entry = tk.Entry(self, textvariable=self.option_var)
+        self.option_entry.pack(pady=5)
+        
+        self.input_label = tk.Label(self, text="Enter the IP address or ASN to look up:")
+        self.input_label.pack(pady=10)
+        
+        self.input_var = tk.StringVar()
+        self.input_entry = tk.Entry(self, textvariable=self.input_var)
+        self.input_entry.pack(pady=5)
+        
+        self.lookup_button = tk.Button(self, text="Look Up", command=self.lookup)
+        self.lookup_button.pack(pady=20)
+        
+        self.result_text = tk.Text(self, height=10, width=70)
+        self.result_text.pack(pady=10)
+        
+    def lookup(self):
+        option = self.option_var.get()
+        input_value = self.input_var.get()
+        
+        if option == '1':
+            result = perform_ip_lookup(input_value)
+        elif option == '2':
+            result = perform_asn_lookup(input_value)
+        else:
+            result = "Invalid option. Please enter 1 for IP lookup or 2 for ASN lookup."
+        
+        self.result_text.delete(1.0, tk.END)
+        self.result_text.insert(tk.END, result)
 
 def main():
     setup_logging()
@@ -296,39 +366,8 @@ def main():
             download_country_asn_json()
             extract_gzip(COUNTRY_ASN_JSON_PATH, EXTRACTED_JSON_PATH)
     
-    option = input("Enter 1 for IP lookup, 2 for ASN lookup: ")
-    if option == '1':
-        ip_address = input("Enter the IP address to look up: ")
-        country_asn_data = fetch_country_asn_details(ip_address)
-        
-        # Try IPinfo first
-        data = fetch_ipinfo_details(ip_address)
-        if not data:  # Fallback to IPStack if IPinfo fails
-            data = fetch_ipstack_details(ip_address)
-        
-        if data:
-            if country_asn_data:
-                data.update(country_asn_data)
-            display_ipinfo_data(data)
-        else:
-            print("Failed to retrieve IP information from all sources.")
-    elif option == '2':
-        asn = input("Enter the ASN to look up (e.g., AS7922): ")
-        data = fetch_asn_details(asn)
-        if data:
-            display_asn_data(data)
-        else:
-            print(f"Failed to retrieve details for ASN: {asn}")
-    
-    # Example usage of downloading with cURL
-    download_using_curl(COUNTRY_ASN_DB_URL, COUNTRY_ASN_DB_PATH)
-    extract_gzip(COUNTRY_ASN_CSV_PATH, EXTRACTED_CSV_PATH)
-    filter_country_from_csv(EXTRACTED_CSV_PATH, 'US', 'data/location_us.csv')
-
-    # Example for filtering multiple countries
-    with open('data/countries.txt', 'w') as f:
-        f.write(',CA,\n,FR,\n,US,\n,DE,\n,UK,\n')
-    filter_multiple_countries(EXTRACTED_CSV_PATH, 'data/countries.txt', 'data/filtered_location.csv')
+    app = IPFinderApp()
+    app.mainloop()
 
 if __name__ == '__main__':
     main()

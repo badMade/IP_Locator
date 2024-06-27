@@ -21,3 +21,12 @@
 2024-06-26 22:24:11,492 - ERROR - Failed to extract data/location.csv.gz. Error: Command 'gunzip -c data/location.csv.gz > data/location.csv' returned non-zero exit status 1.
 2024-06-26 22:24:11,512 - ERROR - Failed to filter US data from data/location.csv. Error: Command '(head -1 data/location.csv; grep ',US,' data/location.csv) > data/location_us.csv' returned non-zero exit status 1.
 2024-06-26 22:24:11,532 - ERROR - Failed to filter multiple countries data from data/location.csv. Error: Command '(head -1 data/location.csv; grep -f data/countries.txt data/location.csv) > data/filtered_location.csv' returned non-zero exit status 1.
+2024-06-26 22:33:16,854 - INFO - Logging initialized.
+2024-06-26 22:33:16,856 - INFO - Data source: IPinfo (https://ipinfo.io)
+2024-06-26 22:33:16,856 - INFO - Data source: IPinfo (https://ipinfo.io)
+2024-06-26 22:33:16,856 - INFO - Country + ASN database already exists.
+2024-06-26 22:33:50,158 - ERROR - Error fetching Country + ASN details for IP: 98.237.123.231. Error: The asn method cannot be used with the ipinfo generic_country_free_country_asn.mmdb database
+2024-06-26 22:33:51,505 - INFO - Downloaded file from https://ipinfo.io/data/free/country_asn.mmdb?token=5a09f3d1f03715 to data/country_asn.mmdb
+2024-06-26 22:33:51,506 - ERROR - File data/country_asn.csv.gz does not exist.
+2024-06-26 22:33:51,506 - ERROR - Input CSV file data/country_asn.csv does not exist.
+2024-06-26 22:33:51,508 - ERROR - Input CSV file data/country_asn.csv does not exist.
