@@ -1,0 +1,23 @@
+2024-06-26 22:15:33,481 - INFO - Logging initialized.
+2024-06-26 22:15:33,482 - INFO - Data source: IPinfo (https://ipinfo.io)
+2024-06-26 22:15:33,482 - INFO - Data source: IPinfo (https://ipinfo.io)
+2024-06-26 22:15:34,992 - INFO - Country + ASN database downloaded successfully.
+2024-06-26 22:15:53,426 - INFO - Downloaded file from https://ipinfo.io/data/free/country_asn.mmdb?token=5a09f3d1f03715 to data/location.csv.gz
+2024-06-26 22:20:48,941 - INFO - Logging initialized.
+2024-06-26 22:20:48,942 - INFO - Data source: IPinfo (https://ipinfo.io)
+2024-06-26 22:20:48,942 - INFO - Data source: IPinfo (https://ipinfo.io)
+2024-06-26 22:20:48,943 - INFO - Country + ASN database already exists.
+2024-06-26 22:21:11,291 - INFO - Downloaded file from https://ipinfo.io/data/free/country_asn.mmdb?token=5a09f3d1f03715 to data/location.csv.gz
+2024-06-26 22:21:11,304 - ERROR - Failed to extract data/location.csv.gz. Error: Command 'gunzip -c data/location.csv.gz > data/location.csv' returned non-zero exit status 1.
+2024-06-26 22:22:27,857 - INFO - Logging initialized.
+2024-06-26 22:22:27,857 - INFO - Data source: IPinfo (https://ipinfo.io)
+2024-06-26 22:22:27,858 - INFO - Data source: IPinfo (https://ipinfo.io)
+2024-06-26 22:22:27,858 - INFO - Country + ASN database already exists.
+2024-06-26 22:23:57,437 - INFO - Logging initialized.
+2024-06-26 22:23:57,439 - INFO - Data source: IPinfo (https://ipinfo.io)
+2024-06-26 22:23:57,439 - INFO - Data source: IPinfo (https://ipinfo.io)
+2024-06-26 22:23:57,439 - INFO - Country + ASN database already exists.
+2024-06-26 22:24:11,480 - INFO - Downloaded file from https://ipinfo.io/data/free/country_asn.mmdb?token=5a09f3d1f03715 to data/location.csv.gz
+2024-06-26 22:24:11,492 - ERROR - Failed to extract data/location.csv.gz. Error: Command 'gunzip -c data/location.csv.gz > data/location.csv' returned non-zero exit status 1.
+2024-06-26 22:24:11,512 - ERROR - Failed to filter US data from data/location.csv. Error: Command '(head -1 data/location.csv; grep ',US,' data/location.csv) > data/location_us.csv' returned non-zero exit status 1.
+2024-06-26 22:24:11,532 - ERROR - Failed to filter multiple countries data from data/location.csv. Error: Command '(head -1 data/location.csv; grep -f data/countries.txt data/location.csv) > data/filtered_location.csv' returned non-zero exit status 1.
