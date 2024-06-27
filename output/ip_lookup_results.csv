@@ -1,13 +1,13 @@
 IP,Hostname,City,Region,Country,Location,Organization,Postal Code,Timezone
 71.73.84.23,syn-071-073-084-023.res.spectrum.com,Cleveland Heights,Ohio,US,"41.5200,-81.5562",AS10796 Charter Communications Inc,44118,America/New_York
-73.253.185.148,c-73-253-185-148.hsd1.ct.comcast.net,Westford,Massachusetts,US,"42.5793,-71.4378","AS7922 Comcast Cable Communications, LLC",1886,America/New_York
-174.168.51.95,c-174-168-51-95.hsd1.ct.comcast.net,Kensington,Connecticut,US,"41.6354,-72.7687","AS7922 Comcast Cable Communications, LLC",6037,America/New_York
+73.253.185.148,c-73-253-185-148.hsd1.ct.comcast.net,Westford,Massachusetts,US,"42.5793,-71.4378","AS7922 Comcast Cable Communications, LLC",01886,America/New_York
+174.168.51.95,c-174-168-51-95.hsd1.ct.comcast.net,Kensington,Connecticut,US,"41.6354,-72.7687","AS7922 Comcast Cable Communications, LLC",06037,America/New_York
 69.253.185.201,c-69-253-185-201.hsd1.pa.comcast.net,Philadelphia,Pennsylvania,US,"39.9524,-75.1636","AS7922 Comcast Cable Communications, LLC",19099,America/New_York
 24.113.83.136,24-113-83-136.wavecable.com,Port Orchard,Washington,US,"47.5404,-122.6363",AS11404 Wave Broadband,98366,America/Los_Angeles
 174.73.206.191,ip174-73-206-191.ph.ph.cox.net,Phoenix,Arizona,US,"33.4484,-112.0740",AS22773 Cox Communications Inc.,85001,America/Phoenix
 174.64.78.79,wsip-174-64-78-79.ga.at.cox.net,Gainesville,Florida,US,"29.6516,-82.3248",AS22773 Cox Communications Inc.,32601,America/New_York
 73.254.120.229,c-73-254-120-229.hsd1.wa.comcast.net,South Hill,Washington,US,"47.1412,-122.2701","AS7922 Comcast Cable Communications, LLC",98374,America/Los_Angeles
-173.70.230.49,pool-173-70-230-49.nwrknj.fios.verizon.net,Hillside,New Jersey,US,"40.7012,-74.2301",AS701 Verizon Business,7205,America/New_York
+173.70.230.49,pool-173-70-230-49.nwrknj.fios.verizon.net,Hillside,New Jersey,US,"40.7012,-74.2301",AS701 Verizon Business,07205,America/New_York
 207.228.39.253,,Ashburn,Virginia,US,"39.0437,-77.4875","AS7018 AT&T Services, Inc.",20147,America/New_York
 35.145.102.104,syn-035-145-102-104.res.spectrum.com,Winter Garden,Florida,US,"28.5423,-81.5911","AS33363 Charter Communications, Inc",34787,America/New_York
 24.243.243.153,syn-024-243-243-153.res.spectrum.com,Copperas Cove,Texas,US,"31.1241,-97.9031",AS11427 Charter Communications Inc,76522,America/Chicago
@@ -31,7 +31,7 @@ IP,Hostname,City,Region,Country,Location,Organization,Postal Code,Timezone
 173.22.104.154,173-22-104-154.client.mchsi.com,Monroeville,Alabama,US,"31.5153,-87.3410",AS30036 Mediacom Communications Corp,36460,America/Chicago
 47.148.86.72,47-148-86-72.lsan.ca.frontiernet.net,Norwalk,California,US,"33.9022,-118.0817","AS5650 Frontier Communications of America, Inc.",90650,America/Los_Angeles
 142.214.155.139,,Seattle,Washington,US,"47.6062,-122.3321",AS21743 Atlas Networks Corporation,98101,America/Los_Angeles
-73.197.236.224,c-73-197-236-224.hsd1.nj.comcast.net,Willingboro,New Jersey,US,"40.0279,-74.8691","AS7922 Comcast Cable Communications, LLC",8046,America/New_York
+73.197.236.224,c-73-197-236-224.hsd1.nj.comcast.net,Willingboro,New Jersey,US,"40.0279,-74.8691","AS7922 Comcast Cable Communications, LLC",08046,America/New_York
 104.174.211.112,syn-104-174-211-112.res.spectrum.com,Covina,California,US,"34.0900,-117.8903",AS20001 Charter Communications Inc,91723,America/Los_Angeles
 138.229.235.120,syn-138-229-235-120.res.spectrum.com,Monterey Park,California,US,"34.0534,-118.1271",AS20115 Charter Communications,91754,America/Los_Angeles
 108.165.115.135,,Washington,"Washington, D.C.",US,"38.8951,-77.0364",AS174 Cogent Communications,20004,America/New_York
@@ -48,8 +48,8 @@ IP,Hostname,City,Region,Country,Location,Organization,Postal Code,Timezone
 172.59.97.158,,Milwaukee,Wisconsin,US,"43.0389,-87.9065","AS21928 T-Mobile USA, Inc.",53201,America/Chicago
 108.237.171.107,108-237-171-107.lightspeed.brhmal.sbcglobal.net,Anniston,Alabama,US,"33.6598,-85.8316","AS7018 AT&T Services, Inc.",36201,America/Chicago
 135.134.227.13,h135-134-227-13.euclwi.broadband.dynamic.tds.net,Eau Claire,Wisconsin,US,"44.8113,-91.4985",AS4181 TDS TELECOM,54702,America/Chicago
-98.216.72.38,c-98-216-72-38.hsd1.ma.comcast.net,Springfield,Massachusetts,US,"42.1015,-72.5898","AS7922 Comcast Cable Communications, LLC",1101,America/New_York
-100.1.57.119,pool-100-1-57-119.nwrknj.fios.verizon.net,Fieldsboro,New Jersey,US,"40.1365,-74.7288",AS701 Verizon Business,8505,America/New_York
+98.216.72.38,c-98-216-72-38.hsd1.ma.comcast.net,Springfield,Massachusetts,US,"42.1015,-72.5898","AS7922 Comcast Cable Communications, LLC",01101,America/New_York
+100.1.57.119,pool-100-1-57-119.nwrknj.fios.verizon.net,Fieldsboro,New Jersey,US,"40.1365,-74.7288",AS701 Verizon Business,08505,America/New_York
 206.217.8.23,d206-217-8-23.allwest.net,Rock Springs,Wyoming,US,"41.5875,-109.2029","AS13614 All West Communications, Inc.",82902,America/Denver
 99.42.123.77,99-42-123-77.lightspeed.frokca.sbcglobal.net,Lincoln,California,US,"38.8916,-121.2930","AS7018 AT&T Services, Inc.",95648,America/Los_Angeles
 73.12.194.148,c-73-12-194-148.hsd1.ca.comcast.net,Manteca,California,US,"37.7974,-121.2160","AS7922 Comcast Cable Communications, LLC",95336,America/Los_Angeles
@@ -72,10 +72,10 @@ IP,Hostname,City,Region,Country,Location,Organization,Postal Code,Timezone
 75.44.151.81,75-44-151-81.lightspeed.tukrga.sbcglobal.net,Alpharetta,Georgia,US,"34.0754,-84.2941","AS7018 AT&T Services, Inc.",30009,America/New_York
 71.71.135.85,syn-071-071-135-085.res.spectrum.com,Charlotte,North Carolina,US,"35.1316,-80.8577",AS11426 Charter Communications Inc,28210,America/New_York
 184.97.151.29,184-97-151-29.stpl.qwest.net,Chalco,Nebraska,US,"41.1839,-96.1503","AS209 CenturyLink Communications, LLC",68138,America/Chicago
-76.116.93.98,,Willingboro,New Jersey,US,"40.0279,-74.8691","AS7922 Comcast Cable Communications, LLC",8046,America/New_York
+76.116.93.98,,Willingboro,New Jersey,US,"40.0279,-74.8691","AS7922 Comcast Cable Communications, LLC",08046,America/New_York
 76.35.77.111,syn-076-035-077-111.res.spectrum.com,Dayton,Ohio,US,"39.6651,-84.2401",AS10796 Charter Communications Inc,45449,America/New_York
 67.252.72.100,syn-067-252-072-100.res.spectrum.com,Lancaster,New York,US,"42.9006,-78.6703",AS11351 Charter Communications Inc,14086,America/New_York
-100.1.116.62,pool-100-1-116-62.nwrknj.fios.verizon.net,Wayne,New Jersey,US,"40.9254,-74.2765",AS701 Verizon Business,7470,America/New_York
+100.1.116.62,pool-100-1-116-62.nwrknj.fios.verizon.net,Wayne,New Jersey,US,"40.9254,-74.2765",AS701 Verizon Business,07470,America/New_York
 47.16.187.188,ool-2f10bbbc.dyn.optonline.net,East Patchogue,New York,US,"40.7670,-72.9962",AS6128 Cablevision Systems Corp.,11772,America/New_York
 73.49.31.252,c-73-49-31-252.hsd1.fl.comcast.net,Seminole Manor,Florida,US,"26.5837,-80.1003","AS7922 Comcast Cable Communications, LLC",33462,America/New_York
 76.235.245.164,76-235-245-164.lightspeed.cicril.sbcglobal.net,Waukegan,Illinois,US,"42.3542,-87.8651","AS7018 AT&T Services, Inc.",60085,America/Chicago
@@ -90,7 +90,7 @@ IP,Hostname,City,Region,Country,Location,Organization,Postal Code,Timezone
 45.24.12.225,45-24-12-225.lightspeed.livnmi.sbcglobal.net,Westland,Michigan,US,"42.3242,-83.4002","AS7018 AT&T Services, Inc.",48185,America/Detroit
 144.163.66.15,144-163-66-15.dthn.centurylink.net,Pell City,Alabama,US,"33.5979,-86.3432","AS209 CenturyLink Communications, LLC",35125,America/Chicago
 70.177.144.139,ip70-177-144-139.mc.at.cox.net,Macon,Georgia,US,"32.8407,-83.6324",AS22773 Cox Communications Inc.,31202,America/New_York
-24.34.234.139,c-24-34-234-139.hsd1.ma.comcast.net,Attleboro,Massachusetts,US,"41.9445,-71.2856","AS7922 Comcast Cable Communications, LLC",2703,America/New_York
+24.34.234.139,c-24-34-234-139.hsd1.ma.comcast.net,Attleboro,Massachusetts,US,"41.9445,-71.2856","AS7922 Comcast Cable Communications, LLC",02703,America/New_York
 24.41.101.90,,Eupora,Mississippi,US,"33.5407,-89.2670","AS398913 NT Spark, LLC",39744,America/Chicago
 192.24.102.225,192-24-102-192-24-102-225.cpe.sparklight.net,Angleton,Texas,US,"29.1810,-95.4467","AS11492 CABLE ONE, INC.",77515,America/Chicago
 47.198.113.18,,St. Petersburg,Florida,US,"27.7709,-82.6793","AS5650 Frontier Communications of America, Inc.",33730,America/New_York
@@ -102,7 +102,7 @@ IP,Hostname,City,Region,Country,Location,Organization,Postal Code,Timezone
 70.126.16.230,syn-070-126-016-230.res.spectrum.com,Wimauma,Florida,US,"27.7125,-82.2990","AS33363 Charter Communications, Inc",33598,America/New_York
 73.235.175.103,c-73-235-175-103.hsd1.ca.comcast.net,Fresno,California,US,"36.7477,-119.7724","AS7922 Comcast Cable Communications, LLC",93737,America/Los_Angeles
 24.28.99.245,syn-024-028-099-245.res.spectrum.com,Austin,Texas,US,"30.4300,-97.8326",AS11427 Charter Communications Inc,78726,America/Chicago
-68.118.250.207,syn-068-118-250-207.res.spectrum.com,Chicopee,Massachusetts,US,"42.1764,-72.5761",AS20115 Charter Communications,1020,America/New_York
+68.118.250.207,syn-068-118-250-207.res.spectrum.com,Chicopee,Massachusetts,US,"42.1764,-72.5761",AS20115 Charter Communications,01020,America/New_York
 69.138.164.237,c-69-138-164-237.hsd1.md.comcast.net,Wheaton,Maryland,US,"39.0398,-77.0553","AS7922 Comcast Cable Communications, LLC",20902,America/New_York
 98.237.123.231,c-98-237-123-231.hsd1.pa.comcast.net,York,Pennsylvania,US,"39.9626,-76.7277","AS7922 Comcast Cable Communications, LLC",17401,America/New_York
 98.252.189.7,c-98-252-189-7.hsd1.ga.comcast.net,Atlanta,Georgia,US,"33.7490,-84.3880","AS7922 Comcast Cable Communications, LLC",30302,America/New_York

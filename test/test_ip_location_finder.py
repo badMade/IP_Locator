@@ -34,7 +34,7 @@ class TestIPLocationFinder(unittest.TestCase):
         data = [{'IP': '127.0.0.1', 'Hostname': 'localhost'}]
         file_path = 'output/ip_lookup_results.csv'
 
-        save_to_file(data)
+        save_to_file(data, file_path)
 
         mock_makedirs.assert_called_once_with(os.path.dirname(file_path), exist_ok=True)
         mock_to_csv.assert_called_once()
@@ -89,29 +89,29 @@ class TestIPLocationFinder(unittest.TestCase):
             os.rmdir(os.path.dirname(self.output_file))
 
     def test_save_to_file_creates_file(self):
-        save_to_file(self.test_data)
+        save_to_file(self.test_data, self.output_file)
         self.assertTrue(os.path.exists(self.output_file))
 
     def test_save_to_file_correct_columns(self):
-        save_to_file(self.test_data)
+        save_to_file(self.test_data, self.output_file)
         df = pd.read_csv(self.output_file)
         expected_columns = ['IP', 'Hostname', 'City', 'Region', 'Country', 'Location', 'Organization', 'Postal Code', 'Timezone']
         self.assertEqual(list(df.columns), expected_columns)
 
     def test_save_to_file_correct_data(self):
-        save_to_file(self.test_data)
+        save_to_file(self.test_data, self.output_file)
         df = pd.read_csv(self.output_file)
         self.assertEqual(df.iloc[0]['IP'], '1.1.1.1')
         self.assertEqual(df.iloc[1]['IP'], '2.2.2.2')
 
     def test_save_to_file_empty_data(self):
-        save_to_file([])
+        save_to_file([], self.output_file)
         df = pd.read_csv(self.output_file)
         self.assertTrue(df.empty)
 
     def test_save_to_file_malformed_data(self):
         malformed_data = [{'IP': '1.1.1.1'}, {'Hostname': 'two.two.two.two'}]
-        save_to_file(malformed_data)
+        save_to_file(malformed_data, self.output_file)
         df = pd.read_csv(self.output_file)
         self.assertTrue('IP' in df.columns)
         self.assertTrue('Hostname' in df.columns)
@@ -122,7 +122,7 @@ class TestIPLocationFinder(unittest.TestCase):
 
     def test_save_to_file_invalid_data_types(self):
         invalid_data = [{'IP': 12345, 'Hostname': 67890}]
-        save_to_file(invalid_data)
+        save_to_file(invalid_data, self.output_file)
         df = pd.read_csv(self.output_file)
         self.assertEqual(df.iloc[0]['IP'], '12345')
         self.assertEqual(df.iloc[0]['Hostname'], '67890')
