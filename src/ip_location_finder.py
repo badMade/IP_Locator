@@ -1,8 +1,9 @@
 import os
+import sys
+import subprocess
 import requests
 import geoip2.database
 import logging
-import subprocess
 import json
 import pandas as pd
 import tkinter as tk
@@ -23,6 +24,23 @@ COUNTRY_ASN_CSV_PATH = 'data/country_asn.csv.gz'
 COUNTRY_ASN_JSON_PATH = 'data/country_asn.json.gz'
 EXTRACTED_CSV_PATH = 'data/country_asn.csv'
 EXTRACTED_JSON_PATH = 'data/country_asn.json'
+
+REQUIRED_PACKAGES = [
+    'requests',
+    'geoip2',
+    'pandas',
+    'tk',
+]
+
+def install_and_log_packages(packages: List[str]) -> None:
+    for package in packages:
+        try:
+            __import__(package)
+            logging.info(f"Package '{package}' is already installed.")
+        except ImportError:
+            logging.info(f"Package '{package}' not found. Installing...")
+            subprocess.check_call([sys.executable, '-m', 'pip', 'install', package])
+            logging.info(f"Package '{package}' installed successfully.")
 
 def download_file(url: str, output_path: str) -> None:
     try:
@@ -417,6 +435,7 @@ class IPFinderApp(tk.Tk):
 def main() -> None:
     setup_logging()
     logging.info("Data source: IPinfo (https://ipinfo.io)")
+    install_and_log_packages(REQUIRED_PACKAGES)
     
     download_country_asn_db()
     if not os.path.exists(COUNTRY_ASN_DB_PATH):
