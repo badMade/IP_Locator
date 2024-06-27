@@ -4,8 +4,9 @@ import geoip2.database
 import logging
 import subprocess
 import json
+import pandas as pd
 import tkinter as tk
-from tkinter import messagebox, filedialog
+from tkinter import messagebox, filedialog, ttk
 
 # API Keys and Database URLs
 API_KEYS = {
@@ -285,70 +286,114 @@ def display_asn_data(data):
         result += f"  Netblock: {prefix6['netblock']}, ID: {prefix6['id']}, Name: {prefix6['name']}, Country: {prefix6['country']}\n"
     return result
 
-def perform_ip_lookup(ip_address):
-    country_asn_data = fetch_country_asn_details(ip_address)
-    
-    # Try IPinfo first
-    data = fetch_ipinfo_details(ip_address)
-    if not data:  # Fallback to IPStack if IPinfo fails
-        data = fetch_ipstack_details(ip_address)
-    
-    if data:
-        if country_asn_data:
-            data.update(country_asn_data)
-        return display_ipinfo_data(data)
-    else:
-        return "Failed to retrieve IP information from all sources."
+def perform_ip_lookup(ip_addresses):
+    results = []
+    ip_list = [ip.strip() for ip in ip_addresses.replace(',', ' ').replace('\t', ' ').replace('\n', ' ').split()]
+    for ip in ip_list:
+        country_asn_data = fetch_country_asn_details(ip)
+        data = fetch_ipinfo_details(ip)
+        if not data:
+            data = fetch_ipstack_details(ip)
+        if data:
+            if country_asn_data:
+                data.update(country_asn_data)
+            results.append(data)
+        else:
+            results.append({'ip': ip, 'error': 'Failed to retrieve IP information from all sources.'})
+    return results
 
 def perform_asn_lookup(asn):
     data = fetch_asn_details(asn)
     if data:
-        return display_asn_data(data)
+        return [data]
     else:
-        return f"Failed to retrieve details for ASN: {asn}"
+        return [{'asn': asn, 'error': 'Failed to retrieve details for ASN.'}]
+
+def save_to_file(data, file_type):
+    columns = ['IP', 'Hostname', 'City', 'Region', 'Country', 'Location', 'Organization', 'Postal Code', 'Timezone']
+    df = pd.DataFrame(data, columns=columns)
+
+    if file_type == 'CSV':
+        file_path = filedialog.asksaveasfilename(defaultextension=".csv", filetypes=[("CSV files", "*.csv")])
+        if file_path:
+            df.to_csv(file_path, index=False)
+            messagebox.showinfo("Save Successful", f"Results saved to {file_path}")
+    elif file_type == 'Excel':
+        file_path = filedialog.asksaveasfilename(defaultextension=".xlsx", filetypes=[("Excel files", "*.xlsx")])
+        if file_path:
+            df.to_excel(file_path, index=False)
+            messagebox.showinfo("Save Successful", f"Results saved to {file_path}")
 
 class IPFinderApp(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("IP Location Finder")
-        self.geometry("600x400")
+        self.geometry("800x600")
         
         self.create_widgets()
         
     def create_widgets(self):
-        self.label = tk.Label(self, text="Enter 1 for IP lookup, 2 for ASN lookup:")
+        self.label = tk.Label(self, text="Select Lookup Type:")
         self.label.pack(pady=10)
+
+        self.option_var = tk.StringVar(value="1")
+        self.ip_radiobutton = tk.Radiobutton(self, text="IP Address", variable=self.option_var, value="1")
+        self.ip_radiobutton.pack(pady=5)
+        self.asn_radiobutton = tk.Radiobutton(self, text="ASN", variable=self.option_var, value="2")
+        self.asn_radiobutton.pack(pady=5)
         
-        self.option_var = tk.StringVar()
-        self.option_entry = tk.Entry(self, textvariable=self.option_var)
-        self.option_entry.pack(pady=5)
-        
-        self.input_label = tk.Label(self, text="Enter the IP address or ASN to look up:")
+        self.input_label = tk.Label(self, text="Enter the IP addresses or ASN to look up (comma, tab, or newline separated):")
         self.input_label.pack(pady=10)
         
-        self.input_var = tk.StringVar()
-        self.input_entry = tk.Entry(self, textvariable=self.input_var)
-        self.input_entry.pack(pady=5)
+        self.input_text = tk.Text(self, height=5, width=70)
+        self.input_text.pack(pady=5)
         
         self.lookup_button = tk.Button(self, text="Look Up", command=self.lookup)
         self.lookup_button.pack(pady=20)
         
-        self.result_text = tk.Text(self, height=10, width=70)
-        self.result_text.pack(pady=10)
+        self.result_frame = tk.Frame(self)
+        self.result_frame.pack(pady=10, fill='both', expand=True)
+        
+        self.tree = ttk.Treeview(self.result_frame, columns=('IP', 'Hostname', 'City', 'Region', 'Country', 'Location', 'Organization', 'Postal Code', 'Timezone'), show='headings')
+        for col in self.tree['columns']:
+            self.tree.heading(col, text=col)
+            self.tree.column(col, width=100)
+        self.tree.pack(fill='both', expand=True)
+        
+        self.save_csv_button = tk.Button(self, text="Save as CSV", command=lambda: self.save_results('CSV'))
+        self.save_csv_button.pack(side='left', padx=10, pady=10)
+        
+        self.save_excel_button = tk.Button(self, text="Save as Excel", command=lambda: self.save_results('Excel'))
+        self.save_excel_button.pack(side='left', padx=10, pady=10)
         
     def lookup(self):
         option = self.option_var.get()
-        input_value = self.input_var.get()
+        input_value = self.input_text.get("1.0", tk.END)
         
         if option == '1':
-            result = perform_ip_lookup(input_value)
+            results = perform_ip_lookup(input_value)
         elif option == '2':
-            result = perform_asn_lookup(input_value)
+            results = perform_asn_lookup(input_value.strip())
         else:
-            result = "Invalid option. Please enter 1 for IP lookup or 2 for ASN lookup."
+            messagebox.showerror("Error", "Invalid option. Please select IP lookup or ASN lookup.")
+            return
         
-        self.result_text.delete(1.0, tk.END)
-        self.result_text.insert(tk.END, result)
+        self.tree.delete(*self.tree.get_children())
+        
+        for result in results:
+            self.tree.insert("", "end", values=(result.get('ip', ''),
+                                                result.get('hostname', ''),
+                                                result.get('city', ''),
+                                                result.get('region', ''),
+                                                result.get('country', ''),
+                                                result.get('loc', ''),
+                                                result.get('org', ''),
+                                                result.get('postal', ''),
+                                                result.get('timezone', '')))
+        
+    def save_results(self, file_type):
+        data = [self.tree.item(item)["values"] for item in self.tree.get_children()]
+        save_to_file(data, file_type)
 
 def main():
     setup_logging()
