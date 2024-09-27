@@ -318,11 +318,11 @@ def display_asn_data(data: Dict[str, Any]) -> str:
     return result
 
 def perform_ip_lookup(ip_addresses: str) -> List[Dict[str, Any]]:
-    ip_list = [ip.strip() for ip in ip_addresses.replace(',', ' ').replace('\t', ' ').replace('\n', ' ').split()]
-    results = []
-    for ip in ip_list:
-        country_asn_data = fetch_country_asn_details(ip)
-        data = fetch_ipinfo_details(ip)
+        ip_list = [ip.strip() for ip in ip_addresses.replace(',', ' ').replace('\t', ' ').replace('\n', ' ').split()]
+        results = []
+        for ip in ip_list:
+            country_asn_data = fetch_country_asn_details(ip)
+            data = fetch_ipinfo_details(ip)
         if not data:
             data = fetch_ipstack_details(ip)
         if data:
@@ -331,7 +331,7 @@ def perform_ip_lookup(ip_addresses: str) -> List[Dict[str, Any]]:
             results.append(data)
         else:
             results.append({'ip': ip, 'error': 'Failed to retrieve IP information from all sources.'})
-    return results
+        return results
 
 def perform_asn_lookup(asn: str) -> List[Dict[str, Any]]:
     data = fetch_asn_details(asn)
