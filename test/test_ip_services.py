@@ -144,3 +144,27 @@ def test_fetch_geoip2_details_counters_increment(monkeypatch):
     assert ip_services.cache_misses == 1
     assert isinstance(cache["1.1.1.1"], DummyGeoResponse)
 
+
+def test_cache_counters_track_cached_and_uncached_calls(monkeypatch):
+    dummy_details = SimpleNamespace(
+        city="City",
+        region="Region",
+        country="Country",
+        postal="12345",
+        timezone="UTC",
+        latitude=1.0,
+        longitude=2.0,
+    )
+
+    monkeypatch.setattr(ip_services.ipinfo_handler, "getDetails", lambda _: dummy_details)
+
+    progress, label, root = _dummy_widgets()
+    cache = {}
+
+    ip_services.fetch_ipinfo_details("1.1.1.1", cache, progress, label, root)
+    assert ip_services.cache_hits == 0
+    assert ip_services.cache_misses == 1
+
+    ip_services.fetch_ipinfo_details("1.1.1.1", cache, progress, label, root)
+    assert ip_services.cache_hits == 1
+    assert ip_services.cache_misses == 1
