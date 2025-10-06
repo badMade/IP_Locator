@@ -483,7 +483,35 @@ def save_to_file(data: List[Dict[str, Any]], file_path: str) -> None:
         file_path (str): The path to the output CSV file.
     """
     columns = ['IP', 'Hostname', 'City', 'Region', 'Country', 'Location', 'Organization', 'Postal Code', 'Timezone']
-    df = pd.DataFrame(data, columns=columns)
+    lowercase_to_columns = {
+        'ip': 'IP',
+        'hostname': 'Hostname',
+        'city': 'City',
+        'region': 'Region',
+        'country': 'Country',
+        'loc': 'Location',
+        'org': 'Organization',
+        'postal': 'Postal Code',
+        'timezone': 'Timezone',
+    }
+
+    normalised_rows: List[Dict[str, Any]] = []
+    for entry in data:
+        row: Dict[str, Any] = {}
+        if not isinstance(entry, dict):
+            for column in columns:
+                row[column] = None
+            normalised_rows.append(row)
+            continue
+
+        for lowercase_key, column_name in lowercase_to_columns.items():
+            if column_name in entry:
+                row[column_name] = entry.get(column_name)
+            else:
+                row[column_name] = entry.get(lowercase_key)
+        normalised_rows.append(row)
+
+    df = pd.DataFrame(normalised_rows, columns=columns)
     try:
         os.makedirs(os.path.dirname(file_path), exist_ok=True)
         df.to_csv(file_path, index=False)

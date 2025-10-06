@@ -129,6 +129,38 @@ class TestIPLocationFinder(unittest.TestCase):
         self.assertEqual(df.iloc[0]['IP'], '1.1.1.1')
         self.assertEqual(df.iloc[1]['IP'], '2.2.2.2')
 
+    def test_save_to_file_maps_lowercase_keys_to_columns(self):
+        """Tests that lowercase API keys map to the expected CSV columns."""
+        lowercase_record = [{
+            'ip': '8.8.8.8',
+            'hostname': 'dns.google',
+            'city': 'Mountain View',
+            'region': 'California',
+            'country': 'United States',
+            'loc': '37.3860,-122.0838',
+            'org': 'AS15169 Google LLC',
+            'postal': '94035',
+            'timezone': 'America/Los_Angeles'
+        }]
+
+        save_to_file(lowercase_record, self.output_file)
+        df = pd.read_csv(self.output_file)
+
+        expected_values = {
+            'IP': '8.8.8.8',
+            'Hostname': 'dns.google',
+            'City': 'Mountain View',
+            'Region': 'California',
+            'Country': 'United States',
+            'Location': '37.3860,-122.0838',
+            'Organization': 'AS15169 Google LLC',
+            'Postal Code': '94035',
+            'Timezone': 'America/Los_Angeles'
+        }
+
+        for column, expected in expected_values.items():
+            self.assertEqual(str(df.iloc[0][column]), expected)
+
     def test_save_to_file_empty_data(self):
         """Tests saving empty data to a CSV file."""
         save_to_file([], self.output_file)
