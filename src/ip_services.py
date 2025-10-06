@@ -13,6 +13,18 @@ GEOIP2_DB_PATH = 'data/GeoLite2-City.mmdb'  # Adjust this path
 ipinfo_handler = ipinfo.getHandler(IPINFO_ACCESS_TOKEN)
 
 def fetch_ipinfo_details(ip_addresses, cache, progress, status_label, root):
+    """Fetches IP address details from the IPinfo service.
+
+    Args:
+        ip_addresses (str): A string containing IP addresses, separated by commas, tabs, or newlines.
+        cache (dict): A dictionary to cache results and avoid redundant API calls.
+        progress (ttk.Progressbar): The progress bar widget to update during the fetching process.
+        status_label (tk.Label): The label widget to display the current status.
+        root (tk.Tk): The root Tkinter window to update the UI.
+
+    Returns:
+        pd.DataFrame: A DataFrame containing the location details for the IP addresses.
+    """
     global cache_hits, cache_misses
     ip_list = [ip.strip() for ip in ip_addresses.replace(',', ' ').replace('\t', ' ').replace('\n', ' ').split()]
     data = []
@@ -51,6 +63,18 @@ def fetch_ipinfo_details(ip_addresses, cache, progress, status_label, root):
     return pd.DataFrame(data)
 
 def fetch_ipapi_details(ip_addresses, cache, progress, status_label, root):
+    """Fetches IP address details from the IPAPI service.
+
+    Args:
+        ip_addresses (str): A string containing IP addresses, separated by commas, tabs, or newlines.
+        cache (dict): A dictionary to cache results and avoid redundant API calls.
+        progress (ttk.Progressbar): The progress bar widget to update during the fetching process.
+        status_label (tk.Label): The label widget to display the current status.
+        root (tk.Tk): The root Tkinter window to update the UI.
+
+    Returns:
+        pd.DataFrame: A DataFrame containing the location details for the IP addresses.
+    """
     global cache_hits, cache_misses
     ip_list = [ip.strip() for ip in ip_addresses.replace(',', ' ').replace('\t', ' ').replace('\n', ' ').split()]
     data = []
@@ -90,6 +114,18 @@ def fetch_ipapi_details(ip_addresses, cache, progress, status_label, root):
     return pd.DataFrame(data)
 
 def fetch_geoip2_details(ip_addresses, cache, progress, status_label, root):
+    """Fetches IP address details from a local GeoIP2 database.
+
+    Args:
+        ip_addresses (str): A string containing IP addresses, separated by commas, tabs, or newlines.
+        cache (dict): A dictionary to cache results and avoid redundant database lookups.
+        progress (ttk.Progressbar): The progress bar widget to update during the fetching process.
+        status_label (tk.Label): The label widget to display the current status.
+        root (tk.Tk): The root Tkinter window to update the UI.
+
+    Returns:
+        pd.DataFrame: A DataFrame containing the location details for the IP addresses.
+    """
     global cache_hits, cache_misses
     ip_list = [ip.strip() for ip in ip_addresses.replace(',', ' ').replace('\t', ' ').replace('\n', ' ').split()]
     data = []

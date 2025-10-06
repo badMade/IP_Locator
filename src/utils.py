@@ -1,6 +1,12 @@
 from tkinter import ttk
 
 def create_tooltip(widget, text):
+    """Creates a tooltip for a given Tkinter widget.
+
+    Args:
+        widget: The Tkinter widget to which the tooltip will be attached.
+        text (str): The text to be displayed in the tooltip.
+    """
     tool_tip = ttk.Label(widget, text=text, background="yellow", relief="solid", borderwidth=1, wraplength=150)
     def enter(event):
         tool_tip.place(x=event.x + widget.winfo_x(), y=event.y + widget.winfo_y() + 20)
