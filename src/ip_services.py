@@ -10,10 +10,10 @@ from tkinter import messagebox
 IPINFO_ACCESS_TOKEN = 'your_access_token'
 GEOIP2_DB_PATH = 'data/GeoLite2-City.mmdb'  # Adjust this path
 
+ipinfo_handler = ipinfo.getHandler(IPINFO_ACCESS_TOKEN)
+
 cache_hits = 0
 cache_misses = 0
-
-ipinfo_handler = ipinfo.getHandler(IPINFO_ACCESS_TOKEN)
 
 def fetch_ipinfo_details(ip_addresses, cache, progress, status_label, root):
     """Fetches IP address details from the IPinfo service.
