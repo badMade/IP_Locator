@@ -93,6 +93,20 @@ class TestIPLocationFinder(unittest.TestCase):
         }
         self.assertEqual(result, expected_result)
 
+    def test_package_root_exposes_ipfinderapp(self):
+        """Ensures the package root exposes IPFinderApp and its legacy alias."""
+        from IP_Locator import IPFinderApp, IPLocationFinderApp
+
+        self.assertIs(IPFinderApp, IPLocationFinderApp)
+
+        with patch('src.ip_location_finder.tk.Tk.__init__', return_value=None), \
+             patch('src.ip_location_finder.tk.Tk.title'), \
+             patch('src.ip_location_finder.tk.Tk.geometry'), \
+             patch('src.ip_location_finder.IPFinderApp.create_widgets', return_value=None):
+            app = IPFinderApp()
+
+        self.assertIsInstance(app, IPFinderApp)
+
     # New tests for save_to_file function
     def setUp(self):
         """Set up test data and output file."""
