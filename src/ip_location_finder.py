@@ -58,7 +58,9 @@ def download_file(url: str, output_path: str) -> None:
     try:
         response = requests.get(url)
         response.raise_for_status()
-        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        directory = os.path.dirname(output_path)
+        if directory:
+            os.makedirs(directory, exist_ok=True)
         with open(output_path, 'wb') as file:
             file.write(response.content)
         logging.info(f"Downloaded file from {url} to {output_path}")
@@ -513,7 +515,9 @@ def save_to_file(data: List[Dict[str, Any]], file_path: str) -> None:
 
     df = pd.DataFrame(normalised_rows, columns=columns)
     try:
-        os.makedirs(os.path.dirname(file_path), exist_ok=True)
+        directory = os.path.dirname(file_path)
+        if directory:
+            os.makedirs(directory, exist_ok=True)
         df.to_csv(file_path, index=False)
         logging.info(f"Results saved to {file_path}")
     except OSError as e:

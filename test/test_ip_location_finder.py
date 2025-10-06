@@ -201,5 +201,41 @@ class TestIPLocationFinder(unittest.TestCase):
         self.assertEqual(df.iloc[0]['IP'], 12345.0)
         self.assertEqual(df.iloc[0]['Hostname'], 67890.0)
 
+    @patch('ip_location_finder.os.makedirs')
+    @patch('ip_location_finder.requests.get')
+    def test_download_file_with_bare_filename(self, mock_get, mock_makedirs):
+        """Tests downloading a file to the repository root without creating directories."""
+        url = "https://example.com/root_file"
+        output_path = 'download_test.bin'
+        mock_get.return_value = MagicMock(status_code=200, content=b'root file content')
+
+        try:
+            download_file(url, output_path)
+
+            mock_get.assert_called_once_with(url)
+            mock_makedirs.assert_not_called()
+            self.assertTrue(os.path.exists(output_path))
+            with open(output_path, 'rb') as file:
+                self.assertEqual(file.read(), b'root file content')
+        finally:
+            if os.path.exists(output_path):
+                os.remove(output_path)
+
+    @patch('ip_location_finder.os.makedirs')
+    def test_save_to_file_with_bare_filename(self, mock_makedirs):
+        """Tests saving results to a bare filename in the repository root."""
+        file_path = 'root_results.csv'
+
+        try:
+            save_to_file(self.test_data, file_path)
+
+            mock_makedirs.assert_not_called()
+            self.assertTrue(os.path.exists(file_path))
+            df = pd.read_csv(file_path)
+            self.assertEqual(len(df), len(self.test_data))
+        finally:
+            if os.path.exists(file_path):
+                os.remove(file_path)
+
 if __name__ == '__main__':
     unittest.main()
