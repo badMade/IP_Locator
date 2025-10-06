@@ -33,6 +33,11 @@ REQUIRED_PACKAGES = [
 ]
 
 def install_and_log_packages(packages: List[str]) -> None:
+    """Installs and logs the installation of required packages.
+
+    Args:
+        packages (List[str]): A list of package names to be installed.
+    """
     for package in packages:
         try:
             __import__(package)
@@ -43,6 +48,12 @@ def install_and_log_packages(packages: List[str]) -> None:
             logging.info(f"Package '{package}' installed successfully.")
 
 def download_file(url: str, output_path: str) -> None:
+    """Downloads a file from a URL and saves it to a specified path.
+
+    Args:
+        url (str): The URL of the file to download.
+        output_path (str): The path where the downloaded file will be saved.
+    """
     try:
         response = requests.get(url)
         response.raise_for_status()
@@ -56,6 +67,7 @@ def download_file(url: str, output_path: str) -> None:
         logging.error(f"Failed to create directory for {output_path}. Error: {e}")
 
 def download_country_asn_db() -> None:
+    """Downloads the Country ASN MMDB file if it doesn't already exist."""
     if not os.path.exists('data'):
         os.makedirs('data')
     
@@ -68,6 +80,7 @@ def download_country_asn_db() -> None:
         logging.info("Country + ASN database already exists.")
 
 def download_country_asn_csv() -> None:
+    """Downloads the Country ASN CSV file if it doesn't already exist."""
     if not os.path.exists('data'):
         os.makedirs('data')
     
@@ -80,6 +93,7 @@ def download_country_asn_csv() -> None:
         logging.info("Country + ASN CSV already exists.")
 
 def download_country_asn_json() -> None:
+    """Downloads the Country ASN JSON file if it doesn't already exist."""
     if not os.path.exists('data'):
         os.makedirs('data')
     
@@ -92,6 +106,16 @@ def download_country_asn_json() -> None:
         logging.info("Country + ASN JSON already exists.")
 
 def fetch_country_asn_details(ip_address: str) -> Dict[str, Any]:
+    """Fetches country and ASN details for a given IP address.
+
+    It first tries to use the local MMDB file, then falls back to CSV or JSON files if the database is not available.
+
+    Args:
+        ip_address (str): The IP address to look up.
+
+    Returns:
+        Dict[str, Any]: A dictionary containing the country and ASN details, or an empty dictionary if the lookup fails.
+    """
     try:
         if os.path.exists(COUNTRY_ASN_DB_PATH):
             reader = geoip2.database.Reader(COUNTRY_ASN_DB_PATH)
@@ -117,6 +141,14 @@ def fetch_country_asn_details(ip_address: str) -> Dict[str, Any]:
         return {}
 
 def fetch_country_asn_details_from_csv(ip_address: str) -> Dict[str, Any]:
+    """Fetches country and ASN details from the extracted CSV file.
+
+    Args:
+        ip_address (str): The IP address to look up.
+
+    Returns:
+        Dict[str, Any]: A dictionary containing the details, or an empty dictionary if the IP is not found.
+    """
     with open(EXTRACTED_CSV_PATH, 'r') as file:
         headers = file.readline().strip().split(',')
         for line in file:
@@ -127,6 +159,14 @@ def fetch_country_asn_details_from_csv(ip_address: str) -> Dict[str, Any]:
     return {}
 
 def fetch_country_asn_details_from_json(ip_address: str) -> Dict[str, Any]:
+    """Fetches country and ASN details from the extracted JSON file.
+
+    Args:
+        ip_address (str): The IP address to look up.
+
+    Returns:
+        Dict[str, Any]: A dictionary containing the details, or an empty dictionary if the IP is not found.
+    """
     with open(EXTRACTED_JSON_PATH, 'r') as file:
         data = json.load(file)
         if ip_address in data:
@@ -136,6 +176,12 @@ def fetch_country_asn_details_from_json(ip_address: str) -> Dict[str, Any]:
             return {}
 
 def extract_gzip(file_path: str, output_path: str) -> None:
+    """Extracts a GZIP file to a specified output path.
+
+    Args:
+        file_path (str): The path to the GZIP file.
+        output_path (str): The path to save the extracted file.
+    """
     if not os.path.exists(file_path):
         logging.error(f"File {file_path} does not exist.")
         return
@@ -156,6 +202,14 @@ def extract_gzip(file_path: str, output_path: str) -> None:
         logging.error(f"Failed to extract {file_path}. Error: {e}")
 
 def fetch_ipinfo_details(ip_address: str) -> Dict[str, Any]:
+    """Fetches IP details from the IPinfo API.
+
+    Args:
+        ip_address (str): The IP address to look up.
+
+    Returns:
+        Dict[str, Any]: A dictionary containing the IP details, or an empty dictionary if the request fails.
+    """
     url = f'https://ipinfo.io/{ip_address}/json?token={API_KEYS["ipinfo"]}'
     try:
         response = requests.get(url)
@@ -167,6 +221,19 @@ def fetch_ipinfo_details(ip_address: str) -> Dict[str, Any]:
         return {}
 
 def fetch_ipstack_details(ip_address: str, hostname: int = 0, security: int = 0, fields: str = None, language: str = None, output_format: str = 'json') -> Dict[str, Any]:
+    """Fetches IP details from the IPstack API.
+
+    Args:
+        ip_address (str): The IP address to look up.
+        hostname (int, optional): Whether to include hostname information. Defaults to 0.
+        security (int, optional): Whether to include security information. Defaults to 0.
+        fields (str, optional): Specific fields to request. Defaults to None.
+        language (str, optional): The language for the response. Defaults to None.
+        output_format (str, optional): The output format for the response. Defaults to 'json'.
+
+    Returns:
+        Dict[str, Any]: A dictionary containing the IP details, or an empty dictionary if the request fails.
+    """
     url = f'http://api.ipstack.com/{ip_address}?access_key={API_KEYS["ipstack"]}&hostname={hostname}&security={security}&output={output_format}'
     if fields:
         url += f'&fields={fields}'
@@ -183,6 +250,14 @@ def fetch_ipstack_details(ip_address: str, hostname: int = 0, security: int = 0,
         return {}
 
 def fetch_asn_details(asn: str) -> Dict[str, Any]:
+    """Fetches ASN details from the IPinfo API.
+
+    Args:
+        asn (str): The ASN to look up.
+
+    Returns:
+        Dict[str, Any]: A dictionary containing the ASN details, or an empty dictionary if the request fails.
+    """
     url = f'https://ipinfo.io/{asn}/json?token={API_KEYS["ipinfo"]}'
     try:
         response = requests.get(url)
@@ -194,6 +269,10 @@ def fetch_asn_details(asn: str) -> Dict[str, Any]:
         return {}
 
 def setup_logging() -> None:
+    """Sets up logging for the application.
+
+    Logs are saved to a file in the 'logs' directory.
+    """
     log_directory = "logs"
     try:
         os.makedirs(log_directory, exist_ok=True)
@@ -204,6 +283,12 @@ def setup_logging() -> None:
         logging.error(f"Failed to create log directory. Error: {e}")
 
 def download_using_curl(url: str, output_path: str) -> None:
+    """Downloads a file using the curl command.
+
+    Args:
+        url (str): The URL of the file to download.
+        output_path (str): The path to save the downloaded file.
+    """
     command = f"curl -L {url} -o {output_path}"
     try:
         subprocess.run(command, shell=True, check=True)
@@ -212,6 +297,13 @@ def download_using_curl(url: str, output_path: str) -> None:
         logging.error(f"Failed to download file from {url}. Error: {e}")
 
 def filter_country_from_csv(input_csv: str, country_code: str, output_csv: str) -> None:
+    """Filters data for a specific country from a CSV file.
+
+    Args:
+        input_csv (str): The path to the input CSV file.
+        country_code (str): The country code to filter by.
+        output_csv (str): The path to save the filtered CSV file.
+    """
     if not os.path.exists(input_csv):
         logging.error(f"Input CSV file {input_csv} does not exist.")
         return
@@ -226,6 +318,13 @@ def filter_country_from_csv(input_csv: str, country_code: str, output_csv: str) 
         logging.error(f"Failed to filter {country_code} data from {input_csv}. Error: {e}")
 
 def filter_multiple_countries(input_csv: str, countries_file: str, output_csv: str) -> None:
+    """Filters data for multiple countries from a CSV file.
+
+    Args:
+        input_csv (str): The path to the input CSV file.
+        countries_file (str): A file containing a list of country codes to filter by.
+        output_csv (str): The path to save the filtered CSV file.
+    """
     if not os.path.exists(input_csv):
         logging.error(f"Input CSV file {input_csv} does not exist.")
         return
@@ -246,6 +345,14 @@ def filter_multiple_countries(input_csv: str, countries_file: str, output_csv: s
         logging.error(f"Failed to filter multiple countries data from {input_csv}. Error: {e}")
 
 def display_ipinfo_data(data: Dict[str, Any]) -> str:
+    """Formats IPinfo data for display.
+
+    Args:
+        data (Dict[str, Any]): A dictionary containing IP details from IPinfo.
+
+    Returns:
+        str: A formatted string of the IP details.
+    """
     result = ""
     if 'ip' in data:
         result += f"IP: {data['ip']}\n"
@@ -301,6 +408,14 @@ def display_ipinfo_data(data: Dict[str, Any]) -> str:
     return result
 
 def display_asn_data(data: Dict[str, Any]) -> str:
+    """Formats ASN data for display.
+
+    Args:
+        data (Dict[str, Any]): A dictionary containing ASN details.
+
+    Returns:
+        str: A formatted string of the ASN details.
+    """
     result = f"ASN: {data['asn']}\n"
     result += f"Name: {data['name']}\n"
     result += f"Country: {data['country']}\n"
@@ -318,11 +433,19 @@ def display_asn_data(data: Dict[str, Any]) -> str:
     return result
 
 def perform_ip_lookup(ip_addresses: str) -> List[Dict[str, Any]]:
-        ip_list = [ip.strip() for ip in ip_addresses.replace(',', ' ').replace('\t', ' ').replace('\n', ' ').split()]
-        results = []
-        for ip in ip_list:
-            country_asn_data = fetch_country_asn_details(ip)
-            data = fetch_ipinfo_details(ip)
+    """Performs an IP lookup for a list of IP addresses.
+
+    Args:
+        ip_addresses (str): A string of IP addresses separated by commas, tabs, or newlines.
+
+    Returns:
+        List[Dict[str, Any]]: A list of dictionaries, each containing details for an IP address.
+    """
+    ip_list = [ip.strip() for ip in ip_addresses.replace(',', ' ').replace('\t', ' ').replace('\n', ' ').split()]
+    results = []
+    for ip in ip_list:
+        country_asn_data = fetch_country_asn_details(ip)
+        data = fetch_ipinfo_details(ip)
         if not data:
             data = fetch_ipstack_details(ip)
         if data:
@@ -331,9 +454,17 @@ def perform_ip_lookup(ip_addresses: str) -> List[Dict[str, Any]]:
             results.append(data)
         else:
             results.append({'ip': ip, 'error': 'Failed to retrieve IP information from all sources.'})
-        return results
+    return results
 
 def perform_asn_lookup(asn: str) -> List[Dict[str, Any]]:
+    """Performs an ASN lookup.
+
+    Args:
+        asn (str): The ASN to look up.
+
+    Returns:
+        List[Dict[str, Any]]: A list containing a dictionary of ASN details, or an error message.
+    """
     data = fetch_asn_details(asn)
     if data:
         return [data]
@@ -341,6 +472,12 @@ def perform_asn_lookup(asn: str) -> List[Dict[str, Any]]:
         return [{'asn': asn, 'error': 'Failed to retrieve details for ASN.'}]
 
 def save_to_file(data: List[Dict[str, Any]], file_path: str) -> None:
+    """Saves a list of dictionaries to a CSV file.
+
+    Args:
+        data (List[Dict[str, Any]]): The data to save.
+        file_path (str): The path to the output CSV file.
+    """
     columns = ['IP', 'Hostname', 'City', 'Region', 'Country', 'Location', 'Organization', 'Postal Code', 'Timezone']
     df = pd.DataFrame(data, columns=columns)
     try:
@@ -353,7 +490,12 @@ def save_to_file(data: List[Dict[str, Any]], file_path: str) -> None:
         logging.error(f"Failed to save results to {file_path}. Error: {e}")
 
 class IPFinderApp(tk.Tk):
+    """The main application class for the IP Location Finder.
+
+    This class creates the GUI and handles user interactions.
+    """
     def __init__(self):
+        """Initializes the main application window."""
         super().__init__()
         self.title("IP Location Finder")
         self.geometry("800x600")
@@ -361,6 +503,7 @@ class IPFinderApp(tk.Tk):
         self.create_widgets()
         
     def create_widgets(self) -> None:
+        """Creates and arranges the widgets in the main window."""
         self.label = tk.Label(self, text="Select Lookup Type:")
         self.label.pack(pady=10)
 
@@ -392,6 +535,10 @@ class IPFinderApp(tk.Tk):
         self.save_csv_button.pack(side='left', padx=10, pady=10)
         
     def lookup(self) -> None:
+        """Handles the lookup button click event.
+
+        It retrieves the user input, performs the selected lookup (IP or ASN), and displays the results in the treeview.
+        """
         option = self.option_var.get()
         input_value = self.input_text.get("1.0", tk.END)
         
@@ -417,6 +564,10 @@ class IPFinderApp(tk.Tk):
                                                 result.get('timezone', '')))
         
     def save_results(self) -> None:
+        """Handles the 'Save as CSV' button click event.
+
+        Opens a file dialog for the user to select a save location and then saves the results to a CSV file.
+        """
         file_path = filedialog.asksaveasfilename(defaultextension=".csv", filetypes=[("CSV files", "*.csv")])
         if not file_path:
             return
@@ -433,6 +584,10 @@ class IPFinderApp(tk.Tk):
             messagebox.showerror("Error", f"Failed to save results. Error: {e}")
 
 def main() -> None:
+    """The main entry point of the application.
+
+    It sets up logging, downloads necessary data files, and starts the Tkinter application.
+    """
     setup_logging()
     logging.info("Data source: IPinfo (https://ipinfo.io)")
     install_and_log_packages(REQUIRED_PACKAGES)
