@@ -6,7 +6,7 @@ import subprocess
 import pandas as pd
 from ip_location_finder import (
     download_file, save_to_file, extract_gzip, fetch_country_asn_details, COUNTRY_ASN_DB_PATH,
-    EXTRACTED_CSV_PATH, EXTRACTED_JSON_PATH
+    EXTRACTED_CSV_PATH, EXTRACTED_JSON_PATH, fetch_country_asn_details_from_csv
 )
 
 class TestIPLocationFinder(unittest.TestCase):
@@ -79,6 +79,19 @@ class TestIPLocationFinder(unittest.TestCase):
 
         self.assertEqual(result, expected_result)
         mock_reader.return_value.close.assert_called_once()
+
+    def test_fetch_country_asn_details_from_csv_with_comma_in_field(self):
+        """Tests that `fetch_country_asn_details_from_csv` correctly parses a CSV with a comma in a field."""
+        mock_csv_data = 'ip_address,organization,country\n8.8.8.8,"Google, LLC",US'
+        with patch('builtins.open', mock_open(read_data=mock_csv_data)):
+            result = fetch_country_asn_details_from_csv('8.8.8.8')
+
+        expected_result = {
+            'ip_address': '8.8.8.8',
+            'organization': 'Google, LLC',
+            'country': 'US'
+        }
+        self.assertEqual(result, expected_result)
 
     # New tests for save_to_file function
     def setUp(self):

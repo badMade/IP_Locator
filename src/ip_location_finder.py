@@ -8,6 +8,7 @@ import json
 import pandas as pd
 import tkinter as tk
 from tkinter import messagebox, filedialog, ttk
+import csv
 from typing import List, Dict, Any
 
 # API Keys and Database URLs
@@ -150,10 +151,13 @@ def fetch_country_asn_details_from_csv(ip_address: str) -> Dict[str, Any]:
         Dict[str, Any]: A dictionary containing the details, or an empty dictionary if the IP is not found.
     """
     with open(EXTRACTED_CSV_PATH, 'r') as file:
-        headers = file.readline().strip().split(',')
-        for line in file:
-            values = line.strip().split(',')
-            if values[0] == ip_address:
+        reader = csv.reader(file)
+        try:
+            headers = next(reader)
+        except StopIteration:
+            return {}  # Empty file
+        for values in reader:
+            if values and values[0] == ip_address:
                 logging.info(f"Fetched details from CSV for IP: {ip_address}")
                 return dict(zip(headers, values))
     return {}
