@@ -18,15 +18,22 @@ ipinfo_handler = ipinfo.getHandler(IPINFO_ACCESS_TOKEN)
 def fetch_ipinfo_details(ip_addresses, cache, progress, status_label, root):
     """Fetches IP address details from the IPinfo service.
 
+    This function processes a list of IP addresses, retrieves their details from
+    the IPinfo API, and updates the GUI with the progress. It utilizes a cache
+    to avoid redundant API calls for previously queried IPs.
+
     Args:
-        ip_addresses (str): A string containing IP addresses, separated by commas, tabs, or newlines.
-        cache (dict): A dictionary to cache results and avoid redundant API calls.
-        progress (ttk.Progressbar): The progress bar widget to update during the fetching process.
-        status_label (tk.Label): The label widget to display the current status.
-        root (tk.Tk): The root Tkinter window to update the UI.
+        ip_addresses (str): A string containing IP addresses, separated by
+            commas, tabs, or newlines.
+        cache (dict): A dictionary to cache results.
+        progress (ttk.Progressbar): The progress bar widget to update.
+        status_label (tk.Label): The label widget to display the current
+            status.
+        root (tk.Tk): The root Tkinter window for UI updates.
 
     Returns:
-        pd.DataFrame: A DataFrame containing the location details for the IP addresses.
+        pd.DataFrame: A DataFrame containing the location details for the
+        IP addresses.
     """
     global cache_hits, cache_misses
     ip_list = [ip.strip() for ip in ip_addresses.replace(',', ' ').replace('\t', ' ').replace('\n', ' ').split()]
@@ -68,15 +75,21 @@ def fetch_ipinfo_details(ip_addresses, cache, progress, status_label, root):
 def fetch_ipapi_details(ip_addresses, cache, progress, status_label, root):
     """Fetches IP address details from the IPAPI service.
 
+    This function queries the IPAPI service for a list of IP addresses,
+    updating the GUI with progress. It uses a cache to store and retrieve
+    results for previously looked-up IPs.
+
     Args:
-        ip_addresses (str): A string containing IP addresses, separated by commas, tabs, or newlines.
-        cache (dict): A dictionary to cache results and avoid redundant API calls.
-        progress (ttk.Progressbar): The progress bar widget to update during the fetching process.
-        status_label (tk.Label): The label widget to display the current status.
-        root (tk.Tk): The root Tkinter window to update the UI.
+        ip_addresses (str): A string of IP addresses, separated by commas,
+            tabs, or newlines.
+        cache (dict): A dictionary for caching results.
+        progress (ttk.Progressbar): The progress bar widget to update.
+        status_label (tk.Label): The label for displaying status updates.
+        root (tk.Tk): The root Tkinter window for UI updates.
 
     Returns:
-        pd.DataFrame: A DataFrame containing the location details for the IP addresses.
+        pd.DataFrame: A DataFrame with the location details for the IP
+        addresses.
     """
     global cache_hits, cache_misses
     ip_list = [ip.strip() for ip in ip_addresses.replace(',', ' ').replace('\t', ' ').replace('\n', ' ').split()]
@@ -119,15 +132,21 @@ def fetch_ipapi_details(ip_addresses, cache, progress, status_label, root):
 def fetch_geoip2_details(ip_addresses, cache, progress, status_label, root):
     """Fetches IP address details from a local GeoIP2 database.
 
+    This function looks up IP address details from a local GeoIP2 database file.
+    It updates the GUI with progress and uses a cache to avoid repeated
+    database lookups for the same IP addresses.
+
     Args:
-        ip_addresses (str): A string containing IP addresses, separated by commas, tabs, or newlines.
-        cache (dict): A dictionary to cache results and avoid redundant database lookups.
-        progress (ttk.Progressbar): The progress bar widget to update during the fetching process.
-        status_label (tk.Label): The label widget to display the current status.
-        root (tk.Tk): The root Tkinter window to update the UI.
+        ip_addresses (str): A string of IP addresses, separated by commas,
+            tabs, or newlines.
+        cache (dict): A dictionary for caching results.
+        progress (ttk.Progressbar): The progress bar widget to update.
+        status_label (tk.Label): The label for displaying status updates.
+        root (tk.Tk): The root Tkinter window for UI updates.
 
     Returns:
-        pd.DataFrame: A DataFrame containing the location details for the IP addresses.
+        pd.DataFrame: A DataFrame with the location details for the IP
+        addresses.
     """
     global cache_hits, cache_misses
     ip_list = [ip.strip() for ip in ip_addresses.replace(',', ' ').replace('\t', ' ').replace('\n', ' ').split()]
