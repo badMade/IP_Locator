@@ -62,6 +62,29 @@ def test_fetch_ipinfo_details_counters_increment(monkeypatch):
     assert cache["1.1.1.1"] is dummy_details
 
 
+def test_fetch_ipinfo_details_cache_hit_and_miss(monkeypatch):
+    dummy_details = SimpleNamespace(
+        city="City",
+        region="Region",
+        country="Country",
+        postal="12345",
+        timezone="UTC",
+        latitude=1.0,
+        longitude=2.0,
+    )
+
+    monkeypatch.setattr(ip_services.ipinfo_handler, "getDetails", lambda _: dummy_details)
+
+    progress, label, root = _dummy_widgets()
+    cache = {}
+    result = ip_services.fetch_ipinfo_details("1.1.1.1\n1.1.1.1", cache, progress, label, root)
+
+    assert isinstance(result, pd.DataFrame)
+    assert len(result) == 2
+    assert ip_services.cache_misses == 1
+    assert ip_services.cache_hits == 1
+
+
 def test_fetch_ipapi_details_counters_increment(monkeypatch):
     class DummyResponse:
         def json(self):
