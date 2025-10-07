@@ -1,15 +1,23 @@
 import os
 import sys
 import subprocess
-import requests
-import geoip2.database
 import logging
 import json
-import pandas as pd
-import tkinter as tk
-from tkinter import messagebox, filedialog, ttk
 import csv
-from typing import List, Dict, Any
+from typing import Any, Dict, List, Optional
+
+import requests
+import geoip2.database
+import pandas as pd
+
+try:
+    import tkinter as tk
+    from tkinter import filedialog, messagebox, ttk
+    TKINTER_IMPORT_ERROR: Optional[Exception] = None
+except ImportError as error:
+    tk = None  # type: ignore[assignment]
+    filedialog = messagebox = ttk = None  # type: ignore[assignment]
+    TKINTER_IMPORT_ERROR = error
 
 # API Keys and Database URLs
 API_KEYS = {
@@ -30,8 +38,11 @@ REQUIRED_PACKAGES = [
     'requests',
     'geoip2',
     'pandas',
-    'tk',
 ]
+
+STANDARD_LIBRARY_MODULES = {
+    'tkinter',
+}
 
 def install_and_log_packages(packages: List[str]) -> None:
     """Installs and logs the installation of required packages.
@@ -42,11 +53,46 @@ def install_and_log_packages(packages: List[str]) -> None:
     for package in packages:
         try:
             __import__(package)
-            logging.info(f"Package '{package}' is already installed.")
         except ImportError:
-            logging.info(f"Package '{package}' not found. Installing...")
-            subprocess.check_call([sys.executable, '-m', 'pip', 'install', package])
-            logging.info(f"Package '{package}' installed successfully.")
+            if package in STANDARD_LIBRARY_MODULES:
+                logging.warning(
+                    "Standard library module '%s' is unavailable. Skipping installation because pip cannot install it.",
+                    package,
+                )
+                continue
+
+            logging.info("Package '%s' not found. Installing...", package)
+            try:
+                subprocess.check_call([sys.executable, '-m', 'pip', 'install', package])
+            except subprocess.CalledProcessError as error:
+                logging.error("Failed to install package '%s'. Error: %s", package, error)
+                raise
+            logging.info("Package '%s' installed successfully.", package)
+        else:
+            logging.info("Package '%s' is already installed.", package)
+
+
+def ensure_tkinter_available() -> None:
+    """Raise a descriptive error when Tkinter support is unavailable."""
+
+    if TKINTER_IMPORT_ERROR is not None:
+        message = (
+            "Tkinter is required for the graphical interface but could not be imported. "
+            "Ensure that your Python environment includes Tk support."
+        )
+        logging.error(message)
+        raise RuntimeError(message) from TKINTER_IMPORT_ERROR
+
+
+if tk is not None:
+    TkApplicationBase = tk.Tk
+else:
+
+    class TkApplicationBase:
+        """Fallback base class that raises when Tkinter is missing."""
+
+        def __init__(self, *args: Any, **kwargs: Any) -> None:
+            ensure_tkinter_available()
 
 def download_file(url: str, output_path: str) -> None:
     """Downloads a file from a URL and saves it to a specified path.
@@ -521,13 +567,14 @@ def save_to_file(data: List[Dict[str, Any]], file_path: str) -> None:
     except Exception as e:
         logging.error(f"Failed to save results to {file_path}. Error: {e}")
 
-class IPFinderApp(tk.Tk):
+class IPFinderApp(TkApplicationBase):
     """The main application class for the IP Location Finder.
 
     This class creates the GUI and handles user interactions.
     """
     def __init__(self):
         """Initializes the main application window."""
+        ensure_tkinter_available()
         super().__init__()
         self.title("IP Location Finder")
         self.geometry("800x600")
